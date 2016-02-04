@@ -30,6 +30,6 @@ $ grunt
 This will start the default task which watches for sass changes, start BrowserSync and load the site at http://localhost:4000.
 
 # Contributing
-The [develop](https://github.com/brandaid/dashboard/tree/develop) branch is used to commit new features. The [master](https://github.com/brandaid/dashboard/tree/master) branch should remain the most stable branch for the project.
+The [develop](https://github.com/brandaid/dashboard/tree/develop) branch is used to develop new features. The [master](https://github.com/brandaid/dashboard/tree/master) branch should remain the most stable branch for the project.
 
 The site can be pushed to the [gh-pages](https://github.com/brandaid/dashboard/tree/gh-pages) branch if you need to see a hosted version of your changes. The site is served at http://brandaid.github.io/dashboard.
