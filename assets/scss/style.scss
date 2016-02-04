@@ -1,0 +1,19 @@
+@import 'foundation/foundation';
+// Includes all of foundation. Options can be customized
+// in founation/foundation.scss
+@include foundation-everything;
+
+// Mixin library
+// Docs at http://bourbon.io
+@import 'bourbon/bourbon';
+
+@import 'helper/mixins';
+@import  'helper/functions';
+@import  'helper/colors';
+@import  'helper/typography';
+
+// Import components
+@import 'components/buttons';
+
+// Import layouts
+@import 'layout/page';
