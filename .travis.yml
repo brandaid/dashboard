@@ -1,10 +1,11 @@
 language: ruby
-rvm: 2.2.4
+rvm:
+- 2.2.4
 branches:
   only:
   - master
 script: grunt sass
-after_success: bundle exec travis-custom-deploy sftp .
+after_success: bundle exec travis-custom-deploy ftp .
 env:
   global:
   - secure: m5xM1j1WaHEYezNKZwN8ojTcOQiV4YoB0aWQ1/heCM2oc12Ssp4HPlX8ocOtJ36TlGI+8V5cKA+NJk5dqe0dFeEkyQUX4GY+ksMuT3+YFLOPIGyhG1ux8Qi5hZ9cBPnxWRZMhVtTkR5IEZAmu4J1SQAUl3DE5Z1ql3A0Xyml1TdB1VdNPKLFAYCN8PdFBYIRFtjNcyxIIeG3djmDVbJby13EB8Zr27rOiDmKDbAW0VrJOE1zlXwz3yFZktVgCDhARM9IHchmgFEz3/8X/DdHNf36LrEksVL4itceXQ/L+RiSSu7pN9Q9tKc/opWMpNcxMfZYKuhySoR5DMkbNZ9cszLmLunWpqzu9Yefs2CIEAmDNuBUUU1J1EfMTDFjJSiSOaDxf+TfbS1mqBbOifzhF6IKTOEZ3jOja4xtdN3fD284decCNHlqK7Y+t8ROzbH8OB15HQXlC4JOpZolyK9QwqKLcpKo7cfLEKDoNPsegZiJ9cZj1ijrLuQC24VD8FbCvMoTbE4qxKwRryB9J5hm8QqXgrHmTt8i7TqATbeakU1XrcmTMIATa4DXQsKqbQuPi7H6Kaw2Vpt8V82LCRjtw/yRr83Ml7j0ZdzD5oLLq+3/znzkuL6PyJAo0MVajt2gWiVeub+pCfGeYDFmbIpy5iFsSEfQhMJvhcw68yZVfWg=
