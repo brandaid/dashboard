@@ -1,5 +1,5 @@
 ### Build status
-[!Build status](https://travis-ci.org/brandaid/dashboard.svg?branch=master)
+[![Build Status](https://travis-ci.org/brandaid/dashboard.svg?branch=master)](https://travis-ci.org/brandaid/dashboard)
 
 # Requirements
 You'll need node JS for the project. You can install node at:
