@@ -5,7 +5,7 @@
 You'll need node JS for the project. You can install node at:
 https://nodejs.org/en/blog/release/v0.10.36/
 
-This should install node and NPM.
+This will install node and NPM.
 
 # Installation
 To get started. Clone the repository.
