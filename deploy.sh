@@ -1,10 +1,10 @@
 #!/bin/bash
-gitLastCommit=$(git show --summary --grep="Merge pull request")
+gitLastCommit=$(git show --summary)
 if [[ -z "$gitLastCommit" ]]
 then
 	lastCommit=$(git log --format="%H" -n 1)
 else
-	echo "There's a merge request..."
+	echo "There's a commit..."
 	#take the last commit and take break every word into an array
 	arr=($gitLastCommit)
 	#the 5th element in the array is the commit ID we need. If git log changes, this breaks. :(
