@@ -6,8 +6,7 @@ branches:
   only:
   - master
 script:
-  - npm install grunt-cli -g
-  - grunt sass
+  - echo "Hello Build!"
 after_success: bundle exec travis-custom-deploy ftp .
 env:
   global:
