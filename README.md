@@ -1,3 +1,6 @@
+### Build status
+[!Build status](https://travis-ci.org/brandaid/dashboard.svg?branch=master)
+
 # Requirements
 You'll need node JS for the project. You can install node at:
 https://nodejs.org/en/blog/release/v0.10.36/
