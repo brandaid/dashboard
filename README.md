@@ -1,5 +1,5 @@
 ### Build status
-[![Build Status](https://travis-ci.org/brandaid/dashboard.svg?branch=master)](https://travis-ci.org/brandaid/dashboard)
+[ ![Codeship Status for brandaid/dashboard](https://codeship.com/projects/5042aec0-b16f-0133-e259-3298a4a3e075/status?branch=master)](https://codeship.com/projects/133025)
 
 # Requirements
 You'll need node JS for the project. You can install node at:
