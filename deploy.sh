@@ -19,7 +19,7 @@ else
     for f in $filesChanged
 	do
 		#do not upload these files that aren't necessary to the site
-		if [ "$f" != ".travis.yml" ] && [ "$f" != "deploy.sh" ]  && [ "$f" != "package.json" ]
+		if [ "$f" != ".travis.yml" ] && [ "$f" != "deploy.sh" ]  && [ "$f" != "package.json" ] && [ "$f" != "Gruntfile.js" ]
 		then
 	 		echo "Uploading $f"
 	 		curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASSWORD ftp://ftp1.ftptoyoursite.com/$f
