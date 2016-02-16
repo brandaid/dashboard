@@ -1,0 +1,7 @@
+// Set the font family
+@mixin font($size: rem(16), $weight: normal, $style: normal) {
+  font-family:   $ss-pro;
+  font-size:     $size;
+  font-style:    $style;
+  font-weight:   $weight;
+}
