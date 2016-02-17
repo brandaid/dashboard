@@ -1,0 +1,13 @@
+select {
+  color: $black-1;
+  border: rem(1) solid $gray-3;
+  border-radius: rem(3);
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+select:focus {
+  border: rem(2) solid $blue-2;
+  outline: none;
+}

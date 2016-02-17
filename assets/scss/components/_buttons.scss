@@ -1,0 +1,17 @@
+.button {
+  background: $blue-1;
+  border-radius: rem(3);
+  color: $white;
+  @include font(rem(17), bold);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+
+  &.hover-solid,
+  &:hover {
+    background: $blue-2;
+  }
+}
+
+.button.disabled {
+  background: rgba($blue-1, 0.9);
+}
