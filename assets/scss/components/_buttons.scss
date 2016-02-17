@@ -9,9 +9,42 @@
   &.hover-solid,
   &:hover {
     background: $blue-2;
+    text-decoration: none;
   }
 }
 
-.button.disabled {
+.button.disabled-solid {
   background: rgba($blue-1, 0.9);
+}
+
+.button.outline {
+  background: none;
+  border: rem(3) solid $blue-1;
+  color: $blue-1;
+  padding: 0.85rem 2rem;
+
+  &.hover-outline,
+  &:hover {
+    border: rem(3) solid $blue-2;
+    color: $blue-2;
+  }
+}
+
+.button-add {
+  background: $blue-2;
+  border-radius: 50%;
+  clear: left;
+  display: inline-block;
+  color: $white;
+  padding: 0.5rem 0.45rem;
+  @include transition(0.2s border);
+
+  &.hover,
+  &:hover {
+    background: none;
+    border: rem(3) solid $blue-2;
+    color: $blue-2;
+    padding: 0.3rem 0.25rem;
+    @include transition(0.2s background);
+  }
 }

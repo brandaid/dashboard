@@ -3368,6 +3368,12 @@ body {
   color: #32383c;
   font-size: 15px; }
 
+a {
+  color: #006886; }
+  a:hover {
+    color: #006886;
+    text-decoration: underline; }
+
 .button {
   background: #006886;
   border-radius: 0.1875rem;
@@ -3379,10 +3385,39 @@ body {
   padding: 1rem 2rem;
   text-transform: uppercase; }
   .button.hover-solid, .button:hover {
-    background: #01addf; }
+    background: #01addf;
+    text-decoration: none; }
 
-.button.disabled {
+.button.disabled-solid {
   background: rgba(0, 104, 134, 0.9); }
+
+.button.outline {
+  background: none;
+  border: 0.1875rem solid #006886;
+  color: #006886;
+  padding: 0.85rem 2rem; }
+  .button.outline.hover-outline, .button.outline:hover {
+    border: 0.1875rem solid #01addf;
+    color: #01addf; }
+
+.button-add {
+  background: #01addf;
+  border-radius: 50%;
+  clear: left;
+  display: inline-block;
+  color: #fefefe;
+  padding: 0.5rem 0.45rem;
+  -webkit-transition: 0.2s border;
+  -moz-transition: 0.2s border;
+  transition: 0.2s border; }
+  .button-add.hover, .button-add:hover {
+    background: none;
+    border: 0.1875rem solid #01addf;
+    color: #01addf;
+    padding: 0.3rem 0.25rem;
+    -webkit-transition: 0.2s background;
+    -moz-transition: 0.2s background;
+    transition: 0.2s background; }
 
 .section-heading {
   border-bottom: 0.0625rem solid #dcdcdc;
@@ -3466,5 +3501,11 @@ select {
 select:focus {
   border: 0.125rem solid #01addf;
   outline: none; }
+
+.read-more {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

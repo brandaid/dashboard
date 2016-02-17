@@ -3,3 +3,13 @@ body {
   color: $black-1;
   font-size: 15px;
 }
+
+// Links
+a {
+  color: $blue-1;
+
+  &:hover {
+    color: $blue-1;
+    text-decoration: underline;
+  }
+}
