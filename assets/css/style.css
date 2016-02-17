@@ -3374,7 +3374,8 @@ body {
   font-size: 1.625rem;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem; }
   .section-heading .number {
     color: #dcdcdc;
     float: right;
@@ -3383,48 +3384,59 @@ body {
     font-style: normal;
     font-weight: bold; }
 
-.color-card .inner {
-  box-shadow: 0 0 10px rgba(10, 10, 10, 0.2);
-  border-radius: 0.25rem;
-  overflow: hidden; }
-.color-card .color {
-  height: 6.375rem;
-  width: 100%; }
-  .color-card .color.blue-1 {
-    background-color: #006886; }
-  .color-card .color.blue-2 {
-    background-color: #01addf; }
-  .color-card .color.green {
-    background-color: #6abb4f; }
-  .color-card .color.yellow {
-    background-color: #fec534; }
-  .color-card .color.red {
-    background-color: #f34833; }
-  .color-card .color.black-1 {
-    background-color: #32383c; }
-  .color-card .color.black-2 {
-    background-color: #272c2f; }
-  .color-card .color.black-3 {
-    background-color: #1a1f22; }
-  .color-card .color.gray-1 {
-    background-color: #a5aebe; }
-  .color-card .color.gray-2 {
-    background-color: #959fb0; }
-  .color-card .color.gray-3 {
-    background-color: #8b95a7; }
-  .color-card .color.gray-4 {
-    background-color: #eaedee; }
-  .color-card .color.gray-5 {
-    background-color: #f3f3f3; }
-  .color-card .color.gray-6 {
-    background-color: #dcdcdc; }
-.color-card .hex {
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-  font-size: 0.9375rem;
-  font-style: normal;
-  font-weight: bold;
-  padding: 0.5rem 0;
-  margin: 0;
-  text-align: center; }
+.color-card {
+  margin-bottom: 2rem; }
+  .color-card .inner {
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.2);
+    border-radius: 0.25rem;
+    overflow: hidden; }
+  .color-card .color {
+    height: 6.375rem;
+    width: 100%; }
+    .color-card .color.blue-1 {
+      background-color: #006886; }
+    .color-card .color.blue-2 {
+      background-color: #01addf; }
+    .color-card .color.green {
+      background-color: #6abb4f; }
+    .color-card .color.yellow {
+      background-color: #fec534; }
+    .color-card .color.red {
+      background-color: #f34833; }
+    .color-card .color.black-1 {
+      background-color: #32383c; }
+    .color-card .color.black-2 {
+      background-color: #272c2f; }
+    .color-card .color.black-3 {
+      background-color: #1a1f22; }
+    .color-card .color.gray-1 {
+      background-color: #a5aebe; }
+    .color-card .color.gray-2 {
+      background-color: #959fb0; }
+    .color-card .color.gray-3 {
+      background-color: #8b95a7; }
+    .color-card .color.gray-4 {
+      background-color: #eaedee; }
+    .color-card .color.gray-5 {
+      background-color: #f3f3f3; }
+    .color-card .color.gray-6 {
+      background-color: #dcdcdc; }
+  .color-card .color.half {
+    width: 50%;
+    float: left; }
+    .color-card .color.half:nth-of-type(2) {
+      float: right; }
+  .color-card .hex {
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: bold;
+    clear: left;
+    padding: 0.5rem 0;
+    margin: 0;
+    text-align: center; }
+  .color-card p.hex.half {
+    display: inline-block;
+    width: 49%; }
 
 /*# sourceMappingURL=style.css.map */
