@@ -3368,6 +3368,22 @@ body {
   color: #32383c;
   font-size: 15px; }
 
+.button {
+  background: #006886;
+  border-radius: 0.1875rem;
+  color: #fefefe;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-transform: uppercase; }
+  .button.hover-solid, .button:hover {
+    background: #01addf; }
+
+.button.disabled {
+  background: rgba(0, 104, 134, 0.9); }
+
 .section-heading {
   border-bottom: 0.0625rem solid #dcdcdc;
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
@@ -3438,5 +3454,17 @@ body {
   .color-card p.hex.half {
     display: inline-block;
     width: 49%; }
+
+select {
+  color: #32383c;
+  border: 0.0625rem solid #8b95a7;
+  border-radius: 0.1875rem;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+select:focus {
+  border: 0.125rem solid #01addf;
+  outline: none; }
 
 /*# sourceMappingURL=style.css.map */
