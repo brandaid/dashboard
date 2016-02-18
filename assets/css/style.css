@@ -3508,4 +3508,29 @@ select:focus {
   font-style: normal;
   font-weight: 700; }
 
+.alert {
+  padding: 0.85rem 0 0.85rem 1rem;
+  color: #fefefe;
+  border-radius: 0.1875rem;
+  border: none;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700; }
+  .alert .close-button {
+    right: 0.5rem; }
+  .alert .glyphicons {
+    color: rgba(50, 56, 60, 0.5);
+    font-size: 1.25rem;
+    line-height: 1.5625rem; }
+  .alert.error {
+    background: #f34833; }
+  .alert.success {
+    background: #6abb4f; }
+  .alert.warning {
+    color: rgba(50, 56, 60, 0.5);
+    background: #fec534; }
+  .alert.info {
+    background: #01addf; }
+
 /*# sourceMappingURL=style.css.map */
