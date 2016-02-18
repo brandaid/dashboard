@@ -3410,6 +3410,11 @@ a {
   -webkit-transition: 0.2s border;
   -moz-transition: 0.2s border;
   transition: 0.2s border; }
+  .button-add .glyphicons {
+    color: #fefefe;
+    -webkit-transition: 0.2s border;
+    -moz-transition: 0.2s border;
+    transition: 0.2s border; }
   .button-add.hover, .button-add:hover {
     background: none;
     border: 0.1875rem solid #01addf;
@@ -3418,6 +3423,11 @@ a {
     -webkit-transition: 0.2s background;
     -moz-transition: 0.2s background;
     transition: 0.2s background; }
+    .button-add.hover .glyphicons, .button-add:hover .glyphicons {
+      color: #01addf;
+      -webkit-transition: 0.2s background;
+      -moz-transition: 0.2s background;
+      transition: 0.2s background; }
 
 .section-heading {
   border-bottom: 0.0625rem solid #dcdcdc;
@@ -3425,7 +3435,7 @@ a {
   font-size: 1.625rem;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   padding-bottom: 0.5rem; }
   .section-heading .number {
     color: #dcdcdc;
@@ -3507,6 +3517,8 @@ select:focus {
   font-size: 0.9375rem;
   font-style: normal;
   font-weight: 700; }
+  .read-more .glyphicons {
+    color: #006886; }
 
 .alert {
   padding: 0.85rem 0 0.85rem 1rem;
@@ -3532,5 +3544,15 @@ select:focus {
     background: #fec534; }
   .alert.info {
     background: #01addf; }
+
+.glyphicons {
+  color: #a5aebe; }
+
+.icon-list .glyphicons {
+  display: inline-block;
+  font-size: 1.25rem; }
+.icon-list li {
+  display: inline-block;
+  width: 8.5%; }
 
 /*# sourceMappingURL=style.css.map */

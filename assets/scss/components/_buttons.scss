@@ -39,6 +39,11 @@
   padding: 0.5rem 0.45rem;
   @include transition(0.2s border);
 
+  .glyphicons {
+    color: $white;
+    @include transition(0.2s border);
+  }
+
   &.hover,
   &:hover {
     background: none;
@@ -46,5 +51,10 @@
     color: $blue-2;
     padding: 0.3rem 0.25rem;
     @include transition(0.2s background);
+
+    .glyphicons {
+      color: $blue-2;
+      @include transition(0.2s background);
+    }
   }
 }
