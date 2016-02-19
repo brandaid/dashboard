@@ -63,3 +63,26 @@
   background: $black-3;
   color: $white;
 }
+
+.button.search-solid {
+  background: $gray-3;
+  border-radius: 100%;
+  padding: 0.35rem 0.25rem;
+
+  .glyphicons {
+    color: $white;
+    font-size: rem(20);
+  }
+}
+
+.button.search-outline{
+  background: $white;
+  border: rem(2) solid $gray-1;
+  border-radius: 100%;
+  padding: 0.25rem 0.15rem;
+
+  .glyphicons {
+    color: $gray-1;
+    font-size: rem(20);
+  }
+}
