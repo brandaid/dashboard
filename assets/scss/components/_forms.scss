@@ -1,5 +1,55 @@
+label {
+  color: $gray-1;
+  @include font(1rem, bold);
+  text-transform: uppercase;
+}
+
+input[type=text] {
+  color: $black-1;
+  background: $white;
+  border-radius: rem(3);
+  border: rem(1) solid $gray-1;
+  box-shadow: none;
+  font-weight: normal;
+  padding: 1.25rem 1rem;
+
+  @include placeholder {
+    color: $black-1;
+  }
+}
+
+input[type=text][disabled] {
+  background: $white;
+  border: rem(1) solid $gray-5;
+
+  @include placeholder {
+    color: $gray-3;
+  }
+}
+
+input[type=text].error {
+  background: url('../img/error.svg') 98% center no-repeat;
+  border: rem(2) solid $red;
+  color: $red;
+}
+
+input[type=text].success {
+  background: url('../img/success.svg') 98% center no-repeat;
+  border: rem(2) solid $green;
+  color: $green;
+}
+
+input[type=text].selected,
+input[type=text]:focus {
+  border: rem(2) solid $blue-2;
+  outline: none;
+  box-shadow: none;
+}
+
+
 select {
   color: $black-1;
+  background: url('../img/select.svg') 98% center no-repeat;
   border: rem(1) solid $gray-3;
   border-radius: rem(3);
   height: 3rem;
