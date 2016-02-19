@@ -3553,6 +3553,7 @@ select:focus {
   font-size: 1.25rem; }
 .icon-list li {
   display: inline-block;
+  margin-bottom: 1rem;
   width: 8.5%; }
 
 /*# sourceMappingURL=style.css.map */
