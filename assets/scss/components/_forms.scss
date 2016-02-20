@@ -53,16 +53,22 @@ select {
   color: $black-1;
   background: url('../img/select.svg') 98% center no-repeat;
   border: rem(1) solid $gray-3;
-  border-radius: rem(3);
+  border-radius: rem(3) !important; // overrides foundation input-group
   font-weight: normal;
   height: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
+select.focused,
 select:focus {
   border: rem(2) solid $blue-2;
   outline: none;
+}
+
+// Adjust for dropdown question mark
+.input-group-button .glyphicons {
+  margin-top: rem(-10);
 }
 
 // Search

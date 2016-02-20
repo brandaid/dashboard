@@ -5,3 +5,8 @@
   font-style:    $style;
   font-weight:   $weight;
 }
+
+@mixin icon($unicode) {
+  font-family: 'Glyphicons Regular';
+  content: $unicode;
+}

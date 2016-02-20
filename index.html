@@ -13,7 +13,7 @@
       <!-- Top left column -->
       <div class="small-12 large-6 columns">
         <!-- COLOR SWATCHES -->
-         <section class="dashboard-section color-swatches">
+        <section class="dashboard-section color-swatches">
           <header>
             <h1 class="section-heading">
               Colors
@@ -97,6 +97,7 @@
             </div>
           </div>
         </section>
+        <!-- ICONS -->
         <section class="dashboard-panel icons">
           <header>
             <h1 class="section-heading">
@@ -190,6 +191,7 @@
             </div>
           </header>
         </section>
+        <!-- FORM FIELDS -->
         <section class="dashboard-panel form-fields">
           <header>
             <h1 class="section-heading">
@@ -251,39 +253,41 @@
                 <input type="file" id="exampleFileUpload" class="show-for-sr">
               </div>
               <div class="large-12 columns">
-                <div class="large-6 columns">
-                  <label for="">Radio Buttons/Checkboxes</label>
-                  <label class="radio-button inline">
-                    <input type="radio" name="radio" />
-                    <span class="custom-radio"></span>
-                  </label>
-                  <label class="radio-button inline">
-                    <input type="radio" name="radio" checked />
-                    <span class="custom-radio"></span>
-                  </label>
-                  <label class="checkbox inline" style="margin-left:2rem">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox"></span>
-                  </label>
-                  <label class="checkbox inline">
-                    <input type="checkbox" checked />
-                    <span class="custom-checkbox"></span>
-                  </label>
-                </div>
-                <div class="large-6 columns">
-                  <label for="">Switches</label>
-                  <label class="switch inline">
-                    <div class="custom-switch">
-                      <input type="checkbox" class="custom-switch" id="custom-switch-1">
-                      <label for="custom-switch-1"></label>
-                    </div>
-                  </label>
-                  <label class="switch inline">
-                    <div class="custom-switch">
-                      <input type="checkbox" class="custom-switch" id="custom-switch-2" checked>
-                      <label for="custom-switch-2"></label>
-                    </div>
-                  </label>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <label for="">Radio Buttons/Checkboxes</label>
+                    <label class="radio-button inline">
+                      <input type="radio" name="radio" />
+                      <span class="custom-radio"></span>
+                    </label>
+                    <label class="radio-button inline">
+                      <input type="radio" name="radio" checked />
+                      <span class="custom-radio"></span>
+                    </label>
+                    <label class="checkbox inline" style="margin-left:2rem">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox"></span>
+                    </label>
+                    <label class="checkbox inline">
+                      <input type="checkbox" checked />
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                  <div class="large-6 columns">
+                    <label for="">Switches</label>
+                    <label class="switch inline">
+                      <div class="custom-switch">
+                        <input type="checkbox" class="custom-switch" id="custom-switch-1">
+                        <label for="custom-switch-1"></label>
+                      </div>
+                    </label>
+                    <label class="switch inline">
+                      <div class="custom-switch">
+                        <input type="checkbox" class="custom-switch" id="custom-switch-2" checked>
+                        <label for="custom-switch-2"></label>
+                      </div>
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="large-12 columns">
@@ -311,7 +315,7 @@
       <!-- Top right columns -->
       <div class="small-12 large-6 columns">
         <!-- DROPDOWNS & AVATARS -->
-        <section class="dashboard-panel">
+        <section class="dashboard-panel dropdowns-avatars">
           <header>
             <h1 class="section-heading">
               Dropdowns &amp; Avatars
@@ -319,10 +323,61 @@
             </h1>
           </header>
           <div class="content">
-            <div class="small-12 large-6">
-              <select>
-                <option value="husker">Dropdown</option>
-              </select>
+            <div class="row">
+
+              <div class="small-12 large-8 columns">
+                <div class="input-group">
+                  <select>
+                    <option value="">Dropdown</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <select>
+                    <option value="">Dropdown Question</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <select>
+                    <option value="">Dropdown Question</option>
+                  </select>
+                  <div class="input-group-button">
+                    <span class="glyphicons glyphicons-question-sign"></span>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <select class="focused">
+                    <option value="">Dropdown Focused</option>
+                  </select>
+                </div>
+              </div>
+              <div class="large-3 columns">
+                <div class="row">
+                  <div class="avatar large"></div>
+                  <div class="avatar small"></div>
+                </div>
+                <div class="row">
+                  <div class="avatar large">
+                    <img src="http://www.celebrityspeakersbureau.com/wp-content/uploads/2013/06/sergey-brin.png" alt="">
+                  </div>
+                  <div class="avatar small">
+                    <img src="http://www.celebrityspeakersbureau.com/wp-content/uploads/2013/06/sergey-brin.png" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="avatar-dropdown">
+                    <div class="toggle right">
+                      <div class="avatar small"></div>
+                      <span class="glyphicons glyphicons-chevron-down"></span>
+                    </div>
+                    <ul>
+                      <li><a href="">My Profile</a></li>
+                      <li><a href="">Account Settings</a></li>
+                      <li><a href="">Support</a></li>
+                      <li><a href="">Log Out</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -357,6 +412,7 @@
             </div>
           </header>
         </section>
+        <!-- ALERTS -->
         <section class="dashboard-panel">
           <header>
             <h1 class="section-heading">
