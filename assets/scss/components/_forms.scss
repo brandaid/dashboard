@@ -191,14 +191,14 @@ input[type=search] {
   width: 1rem;
   height: 1rem;
   top: rem(4);
-  left: rem(3);
+  left: rem(4);
   background: #fff;
   pointer-events: none;
   transition: all .3s ease-in-out
 }
 
 .custom-switch label:active:after {
-  width: 2.5rem;
+  width: 2.4rem;
 }
 .custom-switch input:checked + label {
   background: $black-1;

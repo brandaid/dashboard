@@ -99,24 +99,11 @@
       top: 1.6rem;
       right: 2.8rem;
       @include transition(0s border-bottom);
-    }
 
-    &:hover {
-      &:before {
-        content: '';
-      	border-left: rem(8) solid transparent;
-      	border-right: rem(8) solid transparent;
-      	border-bottom: rem(8) solid $gray-3;
-      	height: 0;
-        margin-top: -2rem;
-        width: 0;
-        position: absolute;
-        top: 1.6rem;
-        right: 2.8rem;
-        @include transition(0s border-bottom);
-      }
+
     }
   }
+
   li:first-child a {
     border-radius: rem(3) rem(3) 0 0;
   }
