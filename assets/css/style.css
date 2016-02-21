@@ -3369,12 +3369,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #8b95a7;
   line-height: 1;
   font-size: 8.4375rem;
-  font-weight: 700; }
+  font-weight: 600; }
 .dashboard-panel.typography .small-text {
   color: #8b95a7;
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1; }
+.dashboard-panel.typography p {
+  color: #8b95a7;
+  margin-bottom: 1rem; }
+.dashboard-panel.typography .type-list p {
+  margin-bottom: 0; }
 
 .light {
   font-weight: 300; }
@@ -3869,5 +3874,82 @@ input[type=search] {
 
 .dashboard-panel .avatar-dropdown {
   height: 18.75rem; }
+
+.picker__holder {
+  border-radius: 0.1875rem !important;
+  border: none;
+  max-width: 100%;
+  padding: 0; }
+
+.picker__box {
+  padding: 0; }
+
+.picker__header {
+  background: #6abb4f;
+  margin-top: 0;
+  padding: 1rem; }
+  .picker__header .picker__year,
+  .picker__header .picker__month {
+    color: #ffffff;
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0;
+    text-transform: uppercase; }
+  .picker__header .picker__nav--next,
+  .picker__header .picker__nav--prev {
+    top: 20%;
+    font-size: 0.75rem; }
+  .picker__header .picker__nav--prev {
+    left: 0.5rem; }
+  .picker__header .picker__nav--next {
+    right: 0.5rem; }
+  .picker__header .picker__nav--prev:before {
+    font-family: 'Glyphicons Regular';
+    content: "";
+    border: none;
+    color: #ffffff; }
+  .picker__header .picker__nav--next:before {
+    font-family: 'Glyphicons Regular';
+    content: "";
+    border: none;
+    color: #ffffff; }
+
+.picker__table tbody,
+.picker__table tbody tr:nth-child(even),
+.picker__table thead,
+.picker__table tr {
+  border: none;
+  background: none; }
+.picker__table .picker__weekday {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center; }
+.picker__table .picker__day {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: bold;
+  color: #8b95a7;
+  padding: 1rem; }
+  .picker__table .picker__day:hover {
+    background: #eaedee; }
+  .picker__table .picker__day.picker__day--outfocus {
+    color: #eaedee; }
+  .picker__table .picker__day.picker__day--today {
+    background: #6abb4f;
+    color: #ffffff; }
+    .picker__table .picker__day.picker__day--today:before {
+      display: none; }
+
+.picker__footer {
+  display: none; }
+
+.dashboard-panel.datepicker .input-group {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

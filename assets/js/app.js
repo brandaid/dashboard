@@ -10,8 +10,13 @@
         });
       },
 
+      initDatepicker: function() {
+        $('.datepicker').pickadate();
+      },
+
       init: function() {
         vm.toggleAvatarDropdown();
+        vm.initDatepicker();
       }
     };
 

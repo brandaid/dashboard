@@ -1,4 +1,5 @@
 $ss-pro: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+$glyph: 'Glyphicons Regular';
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $ss-pro;
@@ -14,14 +15,23 @@ h1, h2, h3, h4, h5, h6 {
     color: $gray-3;
     line-height: 1;
     font-size: rem(135);
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .small-text {
     color: $gray-3;
     font-size: rem(36);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
+  }
+
+  p {
+    color: $gray-3;
+    margin-bottom: 1rem;
+  }
+
+  .type-list p {
+    margin-bottom: 0;
   }
 }
 
