@@ -1,6 +1,7 @@
 .notifications {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 2rem;
 
   li {
     border-left: rem(1) solid $gray-1;
@@ -67,5 +68,14 @@
         }
       }
     }
+  }
+}
+
+.notifications.dark {
+  background: $black-1;
+  color: $white;
+
+  article {
+    border-bottom: rem(1) solid $black-3;
   }
 }

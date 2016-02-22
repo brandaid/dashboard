@@ -4042,7 +4042,8 @@ table.tabled {
 
 .menu {
   border: 0.0625rem solid #a5aebe;
-  min-height: 43.75rem; }
+  min-height: 50rem;
+  margin-bottom: 2rem; }
   .menu h4 {
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
     font-size: 1rem;
@@ -4105,9 +4106,23 @@ table.tabled {
 .menu.narrow ul li a {
   padding: 0.5rem 1rem 0.5rem 1rem; }
 
+.menu.dark {
+  background: #272c2f; }
+  .menu.dark .logo {
+    background: #32383c; }
+  .menu.dark h4 {
+    color: #ffffff; }
+  .menu.dark .nav li a {
+    color: #a5aebe; }
+  .menu.dark .nav li.active {
+    background: #1a1f22; }
+  .menu.dark .nav li.active > a {
+    color: #ffffff; }
+
 .notifications {
   list-style-type: none;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 2rem; }
   .notifications li {
     border-left: 0.0625rem solid #a5aebe;
     border-right: 0.0625rem solid #a5aebe;
@@ -4151,6 +4166,12 @@ table.tabled {
         color: #ffffff; }
         .notifications li:hover article .time {
           color: #01addf; }
+
+.notifications.dark {
+  background: #32383c;
+  color: #ffffff; }
+  .notifications.dark article {
+    border-bottom: 0.0625rem solid #1a1f22; }
 
 .dashboard-panel {
   margin-bottom: 2rem; }
