@@ -9,8 +9,8 @@ table.tabled {
   }
 
   thead {
-    background: $gray-3;
-    border: rem(1) solid $gray-3;
+    background: $gray-1;
+    border: rem(1) solid $gray-1;
     color: $white;
 
     th {
@@ -29,13 +29,13 @@ table.tabled {
 
 
   tbody tr {
-    border-top: rem(1) solid $gray-3;
-    border-left: rem(1) solid $gray-3;
-    border-right: rem(1) solid $gray-3;
+    border-top: rem(1) solid $gray-1;
+    border-left: rem(1) solid $gray-1;
+    border-right: rem(1) solid $gray-1;
     @include transition(0.2s all);
 
     &:last-child {
-      border-bottom: rem(1) solid $gray-3;
+      border-bottom: rem(1) solid $gray-1;
     }
   }
 
@@ -60,6 +60,7 @@ table.tabled {
 
   tbody td {
     padding: 1rem;
+    vertical-align: top;
   }
 
   td.quarter {
