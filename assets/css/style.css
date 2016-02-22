@@ -3990,4 +3990,53 @@ input[type=search] {
 .pagination .next.no-text.arrow a:after {
   margin-left: 0; }
 
+table.tabled {
+  position: relative; }
+  table.tabled tbody,
+  table.tabled thead,
+  table.tabled tr {
+    border: none;
+    background: none; }
+  table.tabled thead {
+    background: #8b95a7;
+    border: 0.0625rem solid #8b95a7;
+    color: #ffffff; }
+    table.tabled thead th {
+      padding: 1rem; }
+    table.tabled thead .custom-checkbox {
+      border: 0.0625rem solid #ffffff; }
+      table.tabled thead .custom-checkbox::before, table.tabled thead .custom-checkbox::after {
+        background: #ffffff; }
+  table.tabled tbody tr {
+    border-top: 0.0625rem solid #8b95a7;
+    border-left: 0.0625rem solid #8b95a7;
+    border-right: 0.0625rem solid #8b95a7;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    transition: 0.2s all; }
+    table.tabled tbody tr:last-child {
+      border-bottom: 0.0625rem solid #8b95a7; }
+  table.tabled tbody tr:hover {
+    background: #006886;
+    border: 0.625rem solid #006886;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.9);
+    color: #ffffff;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    transition: 0.2s all;
+    padding: 0.5rem;
+    width: 100%; }
+    table.tabled tbody tr:hover .custom-checkbox {
+      border: 0.0625rem solid #01addf; }
+      table.tabled tbody tr:hover .custom-checkbox::before, table.tabled tbody tr:hover .custom-checkbox::after {
+        background: #01addf; }
+  table.tabled tbody td {
+    padding: 1rem; }
+  table.tabled td.quarter {
+    width: 25%; }
+  table.tabled td.half {
+    width: 50%; }
+  table.tabled td.three-quarter {
+    width: 75%; }
+
 /*# sourceMappingURL=style.css.map */
