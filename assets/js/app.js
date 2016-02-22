@@ -11,7 +11,7 @@
       },
 
       initDatepicker: function() {
-        $('.datepicker').pickadate();
+        $('input.datepicker').pickadate();
       },
 
       init: function() {

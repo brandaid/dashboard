@@ -3496,6 +3496,7 @@ a {
   font-style: normal;
   font-weight: 600;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   padding-bottom: 0.5rem; }
   .section-heading .number {
     color: #dcdcdc;
@@ -3951,5 +3952,42 @@ input[type=search] {
 
 .dashboard-panel.datepicker .input-group {
   position: relative; }
+
+.pagination li {
+  margin-right: 0.5rem; }
+.pagination a {
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 0.0625rem solid #8b95a7;
+  display: inline-block;
+  color: #8b95a7;
+  font-weight: 700;
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  width: 2rem; }
+.pagination a.hover,
+.pagination a:hover {
+  background: #8b95a7;
+  border: 0.0625rem solid #8b95a7;
+  color: #ffffff; }
+.pagination .next a,
+.pagination .prev a {
+  display: inline;
+  padding: 0.25rem 1rem; }
+.pagination .next.arrow a:after {
+  font-family: 'Glyphicons Regular';
+  content: "";
+  margin-left: 0.5rem;
+  vertical-align: bottom; }
+.pagination .prev.arrow a:after {
+  font-family: 'Glyphicons Regular';
+  content: "";
+  margin-left: 0.5rem;
+  vertical-align: bottom; }
+.pagination .prev.no-text.arrow a:after,
+.pagination .next.no-text.arrow a:after {
+  margin-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
