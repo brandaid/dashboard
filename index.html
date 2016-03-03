@@ -4,17 +4,31 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Dashboard</title>
+    <meta name="description" content="Monochromatic Dashboard User Interface Style Guide">
+    <meta name="robots" content="noindex, nofollow">
+    
+     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/glyphicons.css">
     <link rel="stylesheet" href="assets/css/pickadate.css">
     <link rel="stylesheet" href="assets/css/pickadate.classic.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- TOP JAVA -->
+    
   </head>
   <body>
+    
+    
+    <!-- PAGE -->
     <div class="row">
-      <!-- Top left column -->
+        
+        
+      <!-- TOP LEFT COLUMN -->
       <div class="small-12 large-6 columns">
-        <!-- COLOR SWATCHES -->
+          
+        <!-- 01 Color Swatches -->
         <section class="dashboard-section color-swatches">
           <header>
             <h1 class="section-heading">
@@ -99,7 +113,8 @@
             </div>
           </div>
         </section>
-        <!-- ICONS -->
+        
+        <!-- 04 Icons -->
         <section class="dashboard-panel icons">
           <header>
             <h1 class="section-heading">
@@ -193,7 +208,8 @@
             </div>
           </header>
         </section>
-        <!-- FORM FIELDS -->
+        
+        <!-- 06 Form Fields -->
         <section class="dashboard-panel form-fields">
           <header>
             <h1 class="section-heading">
@@ -313,10 +329,14 @@
             </form>
           </div>
         </section>
-      </div><!-- /.col -->
-      <!-- Top right columns -->
+        
+      </div><!-- / top left .col -->
+      
+      
+      <!-- TOP RIGHT COLUMNS -->
       <div class="small-12 large-6 columns">
-        <!-- DROPDOWNS & AVATARS -->
+          
+        <!-- 02 Dropdowns & Avatars -->
         <section class="dashboard-panel dropdowns-avatars">
           <header>
             <h1 class="section-heading">
@@ -342,7 +362,9 @@
                     <option value="">Dropdown Question</option>
                   </select>
                   <div class="input-group-button">
-                    <span class="glyphicons glyphicons-question-sign"></span>
+                    <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Who is Claude?">
+                        <span class="glyphicons glyphicons-question-sign"></span>
+                    </span>
                   </div>
                 </div>
                 <div class="input-group">
@@ -382,7 +404,8 @@
             </div>
           </div>
         </section>
-        <!-- TYPOGRAPHY -->
+        
+        <!-- 03 Typography -->
         <section class="dashboard-panel typography">
           <header>
             <h1 class="section-heading">
@@ -394,7 +417,7 @@
             <div class="medium-6 large-6 columns">
               <div class="row">
                 <div class="small-12 medium-6 columns"><p class="semibold">Font Family:</p></div>
-                <div class="small-12 medium-6 columns"><p>Source Sans Pro<p></div>
+                <div class="small-12 medium-6 columns"><p>Source Sans Pro</p></div>
                 <div class="small-12 medium-6 columns"><p class="semibold">Font Styles:</p></div>
                 <div class="small-12 medium-6 columns type-list">
                   <p class="light">Light</p>
@@ -411,7 +434,8 @@
             </div>
           </div>
         </section>
-        <!-- BUTTON STATES -->
+        
+        <!-- 05 Button States -->
         <section class="dashboard-panel">
           <header>
             <h1 class="section-heading">
@@ -442,7 +466,8 @@
             </div>
           </header>
         </section>
-        <!-- ALERTS -->
+        
+        <!-- 07 Alerts -->
         <section class="dashboard-panel">
           <header>
             <h1 class="section-heading">
@@ -477,7 +502,8 @@
             </div>
           </div>
         </section>
-        <!-- DATEPICKER -->
+        
+        <!-- 08 Datepicker -->
         <section class="dashboard-panel datepicker">
           <header>
             <h1 class="section-heading">
@@ -514,10 +540,14 @@
             </div>
           </div>
         </section>
-      </div><!-- /.col -->
-      <!-- Full bottom section -->
+        
+      </div><!-- /top right .col -->
+      
+      
+      <!-- FULL BOTTOM SECTION -->
       <div class="small-12 columns">
-        <!-- PAGINATION -->
+          
+        <!-- 09 Pagination -->
         <section class="dashboard-panel pagination">
           <header>
             <h1 class="section-heading">
@@ -548,7 +578,8 @@
             </ul>
           </div>
         </section>
-        <!-- PAGINATION -->
+        
+        <!-- 10 Tables -->
         <section class="dashboard-panel tables">
           <header>
             <h1 class="section-heading">
@@ -618,6 +649,8 @@
             </table>
           </div>
         </section>
+        
+        <!-- 11 Sidebars & Notifications (Navigation) -->
         <section class="dashboard-panel navigation">
           <header>
             <h1 class="section-heading">
@@ -627,7 +660,8 @@
           <div class="content">
             <div class="small-12 columns">
               <div class="row">
-                <!-- MENUS AND NOTIFICATIONS LIGHT -->
+                  
+                <!-- Menus & Notifications LIGHT -->
                 <aside class="small-12 medium-3 columns">
                   <div class="menu">
                     <a href="" class="logo">Logo</a>
@@ -765,10 +799,13 @@
 
               </div>
             </div>
+            
             <div class="small-12 columns">
               <div class="row">
-                <!-- MENUS NOTIFICATIONS DARK -->
+                  
+                <!-- Menus & Notifications DARK -->
                 <aside class="small-12 medium-3 columns">
+                    
                   <div class="menu dark">
                     <a href="" class="logo">Logo</a>
                     <h4>Menu</h4>
@@ -904,13 +941,23 @@
                 </aside>
               </div>
             </div>
+          </div>
         </section>
-      </div>
-    </div><!-- /.row -->
+        
+      </div><!-- / full bottom section.col -->
+      
+      
+    </div><!-- / PAGE -->
+    
+    
+    <!-- GLOBAL JAVASCRIPT !-->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
     <script src="assets/js/foundation.min.js"></script>
     <script src="assets/js/picker.js"></script>
     <script src="assets/js/picker.date.js"></script>
     <script src="assets/js/app.js"></script>
+    
+    
   </body>
 </html>
