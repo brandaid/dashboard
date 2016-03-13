@@ -87,11 +87,16 @@
   }
 
   li:first-child a {
+    color: $white;
+    background: $gray-3;
+    text-decoration: none;
+    @include transition(0.3s background, color);
+    
     &:before {
       content: '';
     	border-left: rem(8) solid transparent;
     	border-right: rem(8) solid transparent;
-    	border-bottom: rem(8) solid $white;
+    	border-bottom: rem(8) solid $gray-3;
     	height: 0;
       margin-top: -2rem;
       width: 0;
@@ -99,8 +104,6 @@
       top: 1.6rem;
       right: 2.8rem;
       @include transition(0s border-bottom);
-
-
     }
   }
 
