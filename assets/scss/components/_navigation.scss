@@ -1,7 +1,10 @@
-.vertical-menu {
+.dashboard-panel.vertical-menu {
   border: rem(1) solid $gray-1;
-  min-height: rem(800);
   margin-bottom: 2rem;
+}
+
+.vertical-menu {
+  min-height: rem(800);
 
   h4 {
     @include font(1rem, bold);

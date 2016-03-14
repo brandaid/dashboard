@@ -4046,10 +4046,12 @@ table.tabled {
   table.tabled td.three-quarter {
     width: 75%; }
 
-.vertical-menu {
+.dashboard-panel.vertical-menu {
   border: 0.0625rem solid #a5aebe;
-  min-height: 50rem;
   margin-bottom: 2rem; }
+
+.vertical-menu {
+  min-height: 50rem; }
   .vertical-menu h4 {
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
     font-size: 1rem;
@@ -4194,9 +4196,31 @@ table.tabled {
     color: #ffffff;
     display: inline-block;
     font-size: 1.875rem;
+    font-weight: 700;
     padding-left: 0.5rem; }
 
 .dashboard-panel {
   margin-bottom: 2rem; }
+
+aside.left {
+  display: table;
+  height: 100%;
+  width: 20%;
+  position: relative; }
+  aside.left::after {
+    background-color: rgba(10, 10, 10, 0);
+    background-image: -webkit-linear-gradient(left, rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.1));
+    background-image: linear-gradient(to right,rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.1));
+    content: '';
+    display: table;
+    width: 0.3125rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1; }
+
+.main-content {
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
