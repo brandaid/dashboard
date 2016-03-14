@@ -92,7 +92,7 @@ table.tabled {
     font-size: rem(14);
     font-weight: bold;
     text-transform: uppercase;
-    width: 25%;
+    width: 30%;
   }
 }
 
@@ -100,6 +100,14 @@ table.tabled {
   padding: 1rem;
 }
 
+.table-row .tabled thead {
+  border-radius: rem(4);
+}
+
 .table-row .button.small {
-  margin: 0 0.2rem 0 0;  
+  margin: 0 0.2rem 0 0;
+}
+
+.table-row .tabled .glyphicons-warning-sign {
+  color: $yellow;
 }

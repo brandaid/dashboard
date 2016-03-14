@@ -1,3 +1,6 @@
+body, html {
+  height: 100%;
+}
 .dashboard-panel {
   margin-bottom: 2rem;
 }
@@ -24,5 +27,6 @@ aside.left {
 
 .main-content {
   float: left;
+  height: 100%;
   width: 80%;
 }

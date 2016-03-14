@@ -4069,13 +4069,19 @@ table.tabled {
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
-    width: 25%; }
+    width: 30%; }
 
 .table-row {
   padding: 1rem; }
 
+.table-row .tabled thead {
+  border-radius: 0.25rem; }
+
 .table-row .button.small {
   margin: 0 0.2rem 0 0; }
+
+.table-row .tabled .glyphicons-warning-sign {
+  color: #fec534; }
 
 .dashboard-panel.vertical-menu {
   border: 0.0625rem solid #a5aebe;
@@ -4257,6 +4263,23 @@ table.tabled {
 .filter-bar .menu.action .glyphicons-chevron-down {
   font-size: 0.75rem; }
 
+.progress-bar {
+  background: #f3f3f3;
+  display: inline-block;
+  height: 0.8125rem;
+  margin-left: 0.2rem;
+  width: 3.75rem;
+  vertical-align: middle; }
+  .progress-bar .count {
+    height: 0.8125rem; }
+  .progress-bar .count.red {
+    background: #f34833; }
+  .progress-bar .count.blue {
+    background: #01addf; }
+
+body, html {
+  height: 100%; }
+
 .dashboard-panel {
   margin-bottom: 2rem; }
 
@@ -4281,6 +4304,7 @@ aside.left {
 
 .main-content {
   float: left;
+  height: 100%;
   width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
