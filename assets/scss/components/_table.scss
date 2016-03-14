@@ -13,8 +13,16 @@ table.tabled {
     border: rem(1) solid $gray-1;
     color: $white;
 
+    &.light {
+      background: $gray-5;
+      border: rem(1) solid $gray-4;
+      color: $gray-1;
+    }
+
     th {
+      font-size: rem(14);
       padding: 1rem;
+      text-transform: uppercase;
     }
 
     .custom-checkbox {
@@ -29,13 +37,13 @@ table.tabled {
 
 
   tbody tr {
-    border-top: rem(1) solid $gray-1;
-    border-left: rem(1) solid $gray-1;
-    border-right: rem(1) solid $gray-1;
+    border-top: rem(1) solid $gray-5;
+    border-left: rem(1) solid $gray-5;
+    border-right: rem(1) solid $gray-5;
     @include transition(0.2s all);
 
     &:last-child {
-      border-bottom: rem(1) solid $gray-1;
+      border-bottom: rem(1) solid $gray-5;
     }
   }
 
@@ -60,7 +68,7 @@ table.tabled {
 
   tbody td {
     padding: 1rem;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   td.quarter {
@@ -72,4 +80,26 @@ table.tabled {
   td.three-quarter {
     width: 75%;
   }
+}
+
+.table-descriptor p {
+  border-bottom: rem(1) solid $gray-4;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  span {
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 25%;
+  }
+}
+
+.table-row {
+  padding: 1rem;
+}
+
+.table-row .button.small {
+  margin: 0 0.2rem 0 0;  
 }

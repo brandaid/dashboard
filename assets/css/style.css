@@ -3425,6 +3425,11 @@ a {
   .button.hover-solid, .button:hover {
     background: #01addf;
     text-decoration: none; }
+  .button.blue-2 {
+    background: #01addf; }
+
+.button.small {
+  padding: 0.5rem; }
 
 .button.disabled-solid {
   background: rgba(0, 104, 134, 0.9); }
@@ -3826,14 +3831,17 @@ input[type=search] {
   .avatar-dropdown .glyphicons {
     margin-top: 1.5rem; }
   .avatar-dropdown ul {
-    list-style-type: none;
+    display: none;
     border-radius: 0.1875rem;
     box-shadow: 0 -2px 10px rgba(10, 10, 10, 0.2);
+    list-style-type: none;
     margin: 0;
     width: 8.75rem;
     position: absolute;
-    right: 0; }
+    right: 0;
+    z-index: 10; }
   .avatar-dropdown li {
+    background: #ffffff;
     display: block; }
   .avatar-dropdown li a {
     color: #8b95a7;
@@ -4007,21 +4015,27 @@ table.tabled {
     background: #a5aebe;
     border: 0.0625rem solid #a5aebe;
     color: #ffffff; }
+    table.tabled thead.light {
+      background: #f3f3f3;
+      border: 0.0625rem solid #eaedee;
+      color: #a5aebe; }
     table.tabled thead th {
-      padding: 1rem; }
+      font-size: 0.875rem;
+      padding: 1rem;
+      text-transform: uppercase; }
     table.tabled thead .custom-checkbox {
       border: 0.0625rem solid #ffffff; }
       table.tabled thead .custom-checkbox::before, table.tabled thead .custom-checkbox::after {
         background: #ffffff; }
   table.tabled tbody tr {
-    border-top: 0.0625rem solid #a5aebe;
-    border-left: 0.0625rem solid #a5aebe;
-    border-right: 0.0625rem solid #a5aebe;
+    border-top: 0.0625rem solid #f3f3f3;
+    border-left: 0.0625rem solid #f3f3f3;
+    border-right: 0.0625rem solid #f3f3f3;
     -webkit-transition: 0.2s all;
     -moz-transition: 0.2s all;
     transition: 0.2s all; }
     table.tabled tbody tr:last-child {
-      border-bottom: 0.0625rem solid #a5aebe; }
+      border-bottom: 0.0625rem solid #f3f3f3; }
   table.tabled tbody tr:hover {
     background: #006886;
     border: 0.625rem solid #006886;
@@ -4038,13 +4052,30 @@ table.tabled {
         background: #01addf; }
   table.tabled tbody td {
     padding: 1rem;
-    vertical-align: top; }
+    vertical-align: middle; }
   table.tabled td.quarter {
     width: 25%; }
   table.tabled td.half {
     width: 50%; }
   table.tabled td.three-quarter {
     width: 75%; }
+
+.table-descriptor p {
+  border-bottom: 0.0625rem solid #eaedee;
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+  .table-descriptor p span {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 25%; }
+
+.table-row {
+  padding: 1rem; }
+
+.table-row .button.small {
+  margin: 0 0.2rem 0 0; }
 
 .dashboard-panel.vertical-menu {
   border: 0.0625rem solid #a5aebe;
@@ -4199,11 +4230,39 @@ table.tabled {
     font-weight: 700;
     padding-left: 0.5rem; }
 
+.filter-bar {
+  background: none;
+  box-shadow: 0 0.125rem 0.125rem rgba(10, 10, 10, 0.05); }
+
+.filter-bar .menu.status {
+  display: inline-block; }
+  .filter-bar .menu.status li {
+    margin-left: 0.3125rem;
+    line-height: 2.1rem; }
+  .filter-bar .menu.status .glyphicons {
+    margin-left: -0.3125rem;
+    line-height: 1.5rem; }
+  .filter-bar .menu.status .glyphicons-play {
+    color: #01addf; }
+  .filter-bar .menu.status .glyphicons-stop {
+    color: #f34833; }
+
+.filter-bar .avatar-dropdown {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 0.3rem; }
+  .filter-bar .avatar-dropdown .glyphicons {
+    margin-top: 0.5rem; }
+
+.filter-bar .menu.action .glyphicons-chevron-down {
+  font-size: 0.75rem; }
+
 .dashboard-panel {
   margin-bottom: 2rem; }
 
 aside.left {
   display: table;
+  float: left;
   height: 100%;
   width: 20%;
   position: relative; }
@@ -4221,6 +4280,7 @@ aside.left {
     z-index: 1; }
 
 .main-content {
+  float: left;
   width: 80%; }
 
 /*# sourceMappingURL=style.css.map */

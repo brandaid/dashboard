@@ -11,6 +11,14 @@
     background: $blue-2;
     text-decoration: none;
   }
+
+  &.blue-2 {
+    background: $blue-2;
+  }
+}
+
+.button.small {
+  padding: 0.5rem;
 }
 
 .button.disabled-solid {

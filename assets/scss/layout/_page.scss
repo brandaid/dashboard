@@ -4,6 +4,7 @@
 
 aside.left {
   display: table;
+  float: left;
   height: 100%;
   width: 20%;
   position: relative;
@@ -22,5 +23,6 @@ aside.left {
 }
 
 .main-content {
+  float: left;
   width: 80%;
 }

@@ -1,0 +1,45 @@
+.filter-bar {
+  background: none;
+  box-shadow: 0 rem(2) rem(2) rgba($black, 0.05);
+}
+
+.filter-bar .menu.status {
+  display: inline-block;
+
+  li {
+    margin-left: rem(5);
+    line-height: 2.1rem;
+  }
+
+  .glyphicons {
+    margin-left: rem(-5);
+    line-height: 1.5rem;
+  }
+
+  .glyphicons-play {
+    color: $blue-2;
+  }
+
+  .glyphicons-stop {
+    color: $red;
+  }
+}
+
+.filter-bar .avatar-dropdown {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 0.3rem;
+
+  .glyphicons {
+    margin-top: 0.5rem;
+  }
+}
+
+.filter-bar .menu.action {
+  .glyphicons-chevron-down {
+    font-size: 0.75rem;
+  }
+
+  li {
+  }
+}
