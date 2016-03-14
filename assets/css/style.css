@@ -4046,11 +4046,11 @@ table.tabled {
   table.tabled td.three-quarter {
     width: 75%; }
 
-.menu {
+.vertical-menu {
   border: 0.0625rem solid #a5aebe;
   min-height: 50rem;
   margin-bottom: 2rem; }
-  .menu h4 {
+  .vertical-menu h4 {
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -4058,7 +4058,7 @@ table.tabled {
     margin: 0;
     padding: 1.5rem 2rem;
     text-transform: uppercase; }
-  .menu .logo {
+  .vertical-menu .logo {
     display: block;
     color: #8b95a7;
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
@@ -4068,43 +4068,43 @@ table.tabled {
     background: #a5aebe;
     padding: 1rem;
     text-transform: uppercase; }
-  .menu .nav {
+  .vertical-menu .nav {
     list-style-type: none;
     margin: 0; }
-  .menu .nav li .glyphicons {
+  .vertical-menu .nav li .glyphicons {
     font-size: 1.25rem;
     vertical-align: middle; }
-  .menu .nav li a {
+  .vertical-menu .nav li a {
     color: #32383c;
     display: block;
     font-weight: 600;
     padding: 0.5rem 1.5rem; }
-    .menu .nav li a:hover {
+    .vertical-menu .nav li a:hover {
       text-decoration: none; }
-  .menu .nav li.parent > a::after {
+  .vertical-menu .nav li.parent > a::after {
     font-family: 'Glyphicons Regular';
     content: "";
     color: #a5aebe;
     float: right;
     margin-top: 0.125rem; }
-  .menu .nav li.parent.active > a::after {
+  .vertical-menu .nav li.parent.active > a::after {
     font-family: 'Glyphicons Regular';
     content: "";
     color: #a5aebe;
     float: right;
     margin-top: 0.125rem; }
-  .menu .nav li.active,
-  .menu .nav li.parent.active {
+  .vertical-menu .nav li.active,
+  .vertical-menu .nav li.parent.active {
     border-left: 0.1875rem solid #01addf;
     background: #f3f3f3; }
-  .menu .nav li.parent ul {
+  .vertical-menu .nav li.parent ul {
     display: none;
     list-style-type: none;
     margin: 0; }
-    .menu .nav li.parent ul li a {
+    .vertical-menu .nav li.parent ul li a {
       color: #8b95a7;
       padding: 0.5rem 4rem; }
-    .menu .nav li.parent ul.visible {
+    .vertical-menu .nav li.parent ul.visible {
       display: inline; }
 
 .menu.narrow ul.nav {
@@ -4112,17 +4112,17 @@ table.tabled {
 .menu.narrow ul li a {
   padding: 0.5rem 1rem 0.5rem 1rem; }
 
-.menu.dark {
+.vertical-menu.dark {
   background: #272c2f; }
-  .menu.dark .logo {
+  .vertical-menu.dark .logo {
     background: #32383c; }
-  .menu.dark h4 {
+  .vertical-menu.dark h4 {
     color: #ffffff; }
-  .menu.dark .nav li a {
+  .vertical-menu.dark .nav li a {
     color: #a5aebe; }
-  .menu.dark .nav li.active {
+  .vertical-menu.dark .nav li.active {
     background: #1a1f22; }
-  .menu.dark .nav li.active > a {
+  .vertical-menu.dark .nav li.active > a {
     color: #ffffff; }
 
 .notifications {
@@ -4178,6 +4178,23 @@ table.tabled {
   color: #ffffff; }
   .notifications.dark article {
     border-bottom: 0.0625rem solid #1a1f22; }
+
+.top-bar {
+  background: #006886; }
+
+.top-bar ul {
+  background: none; }
+  .top-bar ul .small-text-label {
+    color: #a5aebe;
+    display: inline-block;
+    font-size: 1.125rem;
+    padding-bottom: 0.3125rem;
+    vertical-align: bottom; }
+  .top-bar ul .title-label {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.875rem;
+    padding-left: 0.5rem; }
 
 .dashboard-panel {
   margin-bottom: 2rem; }

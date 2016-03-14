@@ -1,0 +1,22 @@
+.top-bar {
+  background: $blue-1;
+}
+
+.top-bar ul {
+  background: none;
+
+  .small-text-label {
+    color: $gray-1;
+    display: inline-block;
+    font-size: rem(18);
+    padding-bottom: rem(5);
+    vertical-align: bottom;
+  }
+
+  .title-label {
+    color: $white;
+    display: inline-block;
+    font-size: rem(30);
+    padding-left: 0.5rem;
+  }
+}
