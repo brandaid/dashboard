@@ -4037,10 +4037,7 @@ table.tabled {
     table.tabled tbody tr:last-child {
       border-bottom: 0.0625rem solid #f3f3f3; }
   table.tabled tbody tr:hover {
-    background: #006886;
-    border: 0.625rem solid #006886;
-    box-shadow: 0 0 10px rgba(10, 10, 10, 0.9);
-    color: #ffffff;
+    background: #f8f8f8;
     -webkit-transition: 0.2s all;
     -moz-transition: 0.2s all;
     transition: 0.2s all;
@@ -4277,9 +4274,6 @@ table.tabled {
   .progress-bar .count.blue {
     background: #01addf; }
 
-body, html {
-  height: 100%; }
-
 .dashboard-panel {
   margin-bottom: 2rem; }
 
@@ -4305,6 +4299,7 @@ aside.left {
 .main-content {
   float: left;
   height: 100%;
-  width: 80%; }
+  width: 80%;
+  overflow-y: scroll; }
 
 /*# sourceMappingURL=style.css.map */

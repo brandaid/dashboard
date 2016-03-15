@@ -48,10 +48,7 @@ table.tabled {
   }
 
   tbody tr:hover {
-    background: $blue-1;
-    border: rem(10) solid $blue-1;
-    box-shadow: 0 0 10px rgba($black, 0.9);
-    color: $white;
+    background: $gray-5 + 5;
     @include transition(0.2s all);
     padding: 0.5rem;
     width: 100%;
