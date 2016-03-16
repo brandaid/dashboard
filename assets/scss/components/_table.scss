@@ -1,6 +1,9 @@
 table.tabled {
   position: relative;
-  table-layout: fixed;
+
+  @include mq(s) {
+    word-break: normal;
+  }
 
   tbody,
   thead,
@@ -53,7 +56,6 @@ table.tabled {
   tbody tr:hover {
     background: $gray-5 + 5;
     @include transition(0.2s all);
-    padding: 0.5rem;
     width: 100%;
 
     .custom-checkbox {
@@ -92,7 +94,7 @@ table.tabled {
     font-size: rem(14);
     font-weight: bold;
     text-transform: uppercase;
-    width: 30%;
+    width: 17%;
 
     @include mq(s) {
       font-size: rem(12);
@@ -106,10 +108,25 @@ table.tabled {
   padding: 1rem;
 }
 
+.table-row .button.glyph {
+  padding: 0.05rem;
+}
+
+.table-row .button .glyphicons {
+  color: $white;
+  font-size: 1.2rem;
+}
+
 .table-row .button.small {
   margin: 0 0.2rem 0 0;
 }
 
 .table-row .tabled .glyphicons-warning-sign {
   color: $yellow;
+}
+
+.table-row .tabled tr td:first-child {
+  @include mq(s) {
+    width: 40%;
+  }
 }

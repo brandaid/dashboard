@@ -4008,7 +4008,10 @@ input[type=search] {
 
 table.tabled {
   position: relative;
-  table-layout: fixed; }
+  /* Small only */ }
+  @media screen and (max-width: 39.9375em) {
+    table.tabled {
+      word-break: normal; } }
   table.tabled tbody,
   table.tabled thead,
   table.tabled tr {
@@ -4046,7 +4049,6 @@ table.tabled {
     -webkit-transition: 0.2s all;
     -moz-transition: 0.2s all;
     transition: 0.2s all;
-    padding: 0.5rem;
     width: 100%; }
     table.tabled tbody tr:hover .custom-checkbox {
       border: 0.0625rem solid #01addf; }
@@ -4071,7 +4073,7 @@ table.tabled {
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
-    width: 30%;
+    width: 17%;
     /* Small only */ }
     @media screen and (max-width: 39.9375em) {
       .table-descriptor p span {
@@ -4082,11 +4084,24 @@ table.tabled {
 .table-row {
   padding: 1rem; }
 
+.table-row .button.glyph {
+  padding: 0.05rem; }
+
+.table-row .button .glyphicons {
+  color: #ffffff;
+  font-size: 1.2rem; }
+
 .table-row .button.small {
   margin: 0 0.2rem 0 0; }
 
 .table-row .tabled .glyphicons-warning-sign {
   color: #fec534; }
+
+.table-row .tabled tr td:first-child {
+  /* Small only */ }
+  @media screen and (max-width: 39.9375em) {
+    .table-row .tabled tr td:first-child {
+      width: 40%; } }
 
 .dashboard-panel.vertical-menu {
   border: 0.0625rem solid #a5aebe;
