@@ -9,7 +9,7 @@
 .top-bar .top-bar-title {
   @include mq(s) {
     float: left;
-    width: 50%;
+    width: 30%;
     margin-right: 0;
   }
 }
@@ -17,7 +17,7 @@
 .top-bar .top-bar-right {
   @include mq(s) {
     float: right;
-    width: 50%;
+    width: 70%;
     position: relative;
   }
 }
