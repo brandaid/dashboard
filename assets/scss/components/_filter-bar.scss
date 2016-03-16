@@ -1,12 +1,31 @@
 .filter-bar {
   background: none;
   box-shadow: 0 rem(2) rem(2) rgba($black, 0.05);
+
+  &.top-bar {
+    @include mq(s) {
+      padding: 1rem 0;
+    }
+  }
+}
+
+.filter-bar .top-bar-left {
+  @include mq(s) {
+    padding-top: 0.75rem;
+    width: 70%;
+  }
+}
+
+.filter-bar .top-bar-right {
+  @include mq(s) {
+    width: 30%;
+  }
 }
 
 .filter-bar .menu.status {
   display: inline-block;
 
-  li {
+  > li {
     margin-left: rem(5);
     line-height: 2.1rem;
   }
@@ -30,16 +49,43 @@
   margin-left: 2rem;
   margin-top: 0.3rem;
 
+  > ul li {
+    float: none;
+  }
+
+  @include mq(s) {
+    margin-left: 0;
+  }
+
   .glyphicons {
     margin-top: 0.5rem;
   }
 }
 
 .filter-bar .menu.action {
+  background: none;
+
   .glyphicons-chevron-down {
     font-size: 0.75rem;
+    @include mq(s) { margin-left: rem(-5); }
   }
 
   li {
+    @include mq(s) {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+
+  a {
+    color: $gray-3;
+    font-weight: 600;
+    text-decoration: none;
+
+    @include mq(s) {
+      display: inline;
+      font-size: rem(14);
+      padding: 0;
+    }
   }
 }
