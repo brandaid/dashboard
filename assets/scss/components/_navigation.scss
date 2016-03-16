@@ -4,7 +4,9 @@
 }
 
 .vertical-menu {
-  min-height: rem(800);
+  @include mq(m) {
+    min-height: rem(800);
+  }
 
   h4 {
     @include font(1rem, bold);
@@ -112,4 +114,8 @@
   .nav li.active > a {
     color: $white;
   }
+}
+
+aside.left .nav {
+  background: $white;
 }

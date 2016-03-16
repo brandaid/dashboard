@@ -32,6 +32,10 @@
     font-size: rem(18);
     vertical-align: bottom;
 
+    @include mq(m) {
+      margin-top: 0.85rem;
+    }
+
     @include mq(s) {
       float: none;
       font-size: rem(14);

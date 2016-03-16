@@ -9,6 +9,13 @@ aside.left {
   width: 20%;
   position: relative;
 
+  @include mq(s) {
+    position: absolute;
+    left: -500px;
+    width: 100%;
+    z-index: 1000;
+  }
+
   &::after {
     @include linear-gradient(to right, rgba($black, 0), rgba($black, 0.1));
     content: '';
@@ -19,6 +26,10 @@ aside.left {
     top: 0;
     right: 0;
     z-index: 1;
+
+    @include mq(s) {
+      display: none;
+    }
   }
 }
 
@@ -26,7 +37,10 @@ aside.left {
   float: left;
   height: 100%;
   width: 80%;
-  overflow-y: scroll;
+
+  @include mq(m) {
+    overflow-y: scroll;
+  }
 
   @include mq(s) {
     width: 100%;

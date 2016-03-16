@@ -127,6 +127,7 @@ table.tabled {
 
 .table-row .tabled tr td:first-child {
   @include mq(s) {
+    border-right: rem(1) solid $gray-5;
     width: 40%;
   }
 }
