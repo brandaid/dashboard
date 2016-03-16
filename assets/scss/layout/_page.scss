@@ -3,7 +3,7 @@
 }
 
 aside.left {
-  display: table;
+  display: block;
   float: left;
   height: 100%;
   width: 20%;
@@ -27,4 +27,8 @@ aside.left {
   height: 100%;
   width: 80%;
   overflow-y: scroll;
+
+  @include mq(s) {
+    width: 100%;
+  }
 }

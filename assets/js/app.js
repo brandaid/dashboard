@@ -1,4 +1,6 @@
 (function($) {
+    $(document).foundation();
+    
     var _dashboard = {
       viewModel: function() {
         return this;

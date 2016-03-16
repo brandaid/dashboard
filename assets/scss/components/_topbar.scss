@@ -1,16 +1,43 @@
 .top-bar {
   background: $blue-1;
+
+  @include mq(s) {
+    padding: 1rem;
+  }
 }
 
-.top-bar ul {
+.top-bar .top-bar-title {
+  @include mq(s) {
+    float: left;
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+.top-bar .top-bar-right {
+  @include mq(s) {
+    float: right;
+    width: 50%;
+    position: relative;
+  }
+}
+
+.top-bar .top-bar-right ul {
   background: none;
+
+  li { float: right; }
 
   .small-text-label {
     color: $gray-1;
-    display: inline-block;
     font-size: rem(18);
-    padding-bottom: rem(5);
     vertical-align: bottom;
+
+    @include mq(s) {
+      float: none;
+      font-size: rem(14);
+      text-align: right;
+      display: block;
+    }
   }
 
   .title-label {
@@ -19,5 +46,25 @@
     font-size: rem(30);
     font-weight: 700;
     padding-left: 0.5rem;
+
+    @include mq(s) {
+      display: block;
+      font-size: rem(22);
+      font-weight: normal;
+      float: none;
+      line-height: 1rem;
+      margin-bottom: 0;
+      padding-left: 0;
+      text-align: right;
+    }
+  }
+}
+
+.top-bar .menu-icon {
+  color: $white;
+  margin-top: 0.3rem;
+
+  &:hover {
+    color: $white;
   }
 }

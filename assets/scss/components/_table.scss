@@ -1,4 +1,7 @@
 table.tabled {
+  //border-collapse: separate !important;
+  border-spacing: 3px;
+  border-radius: 1rem;
   position: relative;
 
   tbody,
@@ -6,11 +9,13 @@ table.tabled {
   tr {
     border: none;
     background: none;
+    border-radius: 1rem;
   }
 
   thead {
     background: $gray-1;
     border: rem(1) solid $gray-1;
+    border-radius: 1rem;
     color: $white;
 
     &.light {
