@@ -4316,6 +4316,11 @@ aside.left .nav {
   background: #01addf;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem; }
+  .off-canvas .top-bar .close-button {
+    color: #ffffff;
+    font-size: 3rem;
+    top: 0.65rem;
+    line-height: 0; }
 
 .filter-bar {
   background: none;
