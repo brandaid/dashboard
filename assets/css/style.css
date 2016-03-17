@@ -4095,12 +4095,16 @@ table.tabled {
 .table-row .tabled .glyphicons-warning-sign {
   color: #fec534; }
 
-.table-row .tabled tr td:first-child {
-  /* Small only */ }
-  @media screen and (max-width: 39.9375em) {
-    .table-row .tabled tr td:first-child {
-      border-right: 0.0625rem solid #f3f3f3;
-      width: 40%; } }
+.pinned {
+  border-left: none;
+  border-right: none; }
+
+.scrollable table td {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+div.table-wrapper {
+  border-right: 1px solid #f3f3f3; }
 
 .dashboard-panel.vertical-menu {
   border: 0.0625rem solid #a5aebe;

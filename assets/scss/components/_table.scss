@@ -126,8 +126,18 @@ table.tabled {
 }
 
 .table-row .tabled tr td:first-child {
-  @include mq(s) {
-    border-right: rem(1) solid $gray-5;
-    width: 40%;
-  }
+}
+
+.pinned {
+    border-left: none;
+    border-right: none;
+}
+
+.scrollable table td {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+div.table-wrapper {
+  border-right: 1px solid $gray-5;
 }
