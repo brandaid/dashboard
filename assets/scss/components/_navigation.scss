@@ -117,5 +117,7 @@
 }
 
 aside.left .nav {
-  background: $white;
+  @include mq(s) {
+    background: $white;
+  }
 }

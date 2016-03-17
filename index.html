@@ -19,240 +19,294 @@
 
   </head>
   <body>
-    <div class="top-bar">
-      <div class="top-bar-title">
-        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-          <span class="menu-icon"></span>
-        </span>
-        <img src="assets/img/logo.svg" alt="P&amp;G logo" class="show-for-medium">
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li class="title-label">Proctor &amp; Gamble</li>
-          <li class="small-text-label">#1234567</li>
-        </ul>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+          <!-- SMALL SCREEN TOP BAR -->
+          <div class="top-bar small">
+            <div class="top-bar-title">
+              <img src="assets/img/logo.svg" alt="P&amp;G logo">
+            </div>
+          </div>
+          <!-- SMALL SCREEN MENU -->
+          <aside class="vertical-menu small">
+            <ul class="nav">
+              <li>
+                <a href=""><span class="glyphicons glyphicons-dashboard"></span> Research Dashboard</a>
+              </li>
+              <li class="parent active">
+                <a href=""><span class="glyphicons glyphicons-group"></span> Assessors</a>
+                <ul class="visible">
+                  <li><a href="">Reports &amp; Statistics</a></li>
+                  <li><a href="">Assessor Lookup</a></li>
+                  <li><a href="">Deduplicate</a></li>
+                  <li><a href="">Process New Reg &amp; Referrals</a></li>
+                  <li><a href="">Points Processing</a></li>
+                  <li><a href="">Bad Email/Disengaged</a></li>
+                  <li><a href="">Trained Panels</a></li>
+                  <li><a href="">Fundraising</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=""><span class="glyphicons glyphicons-folder-open"></span> Archives</a>
+              </li>
+              <li class="parent">
+                <a href=""><span class="glyphicons glyphicons-settings"></span> Settings</a>
+              </li>
+              <li>
+                <a href=""><span class="glyphicons glyphicons-chat"></span> Messages</a>
+              </li>
+              <li>
+                <a href=""><span class="glyphicons glyphicons-question-sign"></span> Help</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- TOP BAR -->
+          <div class="top-bar">
+            <div class="top-bar-title">
+              <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                <span class="menu-icon" data-toggle="offCanvas"></span>
+              </span>
+              <img src="assets/img/logo.svg" alt="P&amp;G logo" class="show-for-medium">
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li class="title-label">Proctor &amp; Gamble</li>
+                <li class="small-text-label">#1234567</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Large screen menu -->
+          <aside class="vertical-menu left show-for-medium">
+            <ul class="nav">
+              <li>
+                <a href=""><span class="glyphicons glyphicons-dashboard"></span> Research Dashboard</a>
+              </li>
+              <li class="parent active">
+                <a href=""><span class="glyphicons glyphicons-group"></span> Assessors</a>
+                <ul class="visible">
+                  <li><a href="">Reports &amp; Statistics</a></li>
+                  <li><a href="">Assessor Lookup</a></li>
+                  <li><a href="">Deduplicate</a></li>
+                  <li><a href="">Process New Reg &amp; Referrals</a></li>
+                  <li><a href="">Points Processing</a></li>
+                  <li><a href="">Bad Email/Disengaged</a></li>
+                  <li><a href="">Trained Panels</a></li>
+                  <li><a href="">Fundraising</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=""><span class="glyphicons glyphicons-folder-open"></span> Archives</a>
+              </li>
+              <li class="parent">
+                <a href=""><span class="glyphicons glyphicons-settings"></span> Settings</a>
+              </li>
+              <li>
+                <a href=""><span class="glyphicons glyphicons-chat"></span> Messages</a>
+              </li>
+              <li>
+                <a href=""><span class="glyphicons glyphicons-question-sign"></span> Help</a>
+              </li>
+            </ul>
+          </aside>
+          <!-- Main content -->
+          <div class="main-content">
+            <div class="filter-bar top-bar">
+              <div class="top-bar-left">
+                <ul class="dropdown menu action" data-dropdown-menu>
+                  <li>
+                    <a href="#dropdown-1">
+                      <span class="glyphicons glyphicons-plus"></span>New Study <span class="glyphicons glyphicons-chevron-down"></span>
+                    </a>
+                    <ul class="menu" id="dropdown-1">
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#dropdown-2">
+                      <span class="glyphicons glyphicons-filter"></span>Filter <span class="glyphicons glyphicons-chevron-down"></span>
+                    </a>
+                    <ul class="menu" id="dropdown-2">
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="top-bar-right">
+                <ul class="menu status show-for-medium">
+                  <li>In Development<span class="glyphicons glyphicons-cogwheel"></span></li>
+                  <li>Open<span class="glyphicons glyphicons-play"></span></li>
+                  <li>Closed<span class="glyphicons glyphicons-stop"></span></li>
+                </ul>
+
+                <div class="avatar-dropdown">
+                  <div class="toggle right">
+                    <div class="avatar small"></div>
+                    <span class="glyphicons glyphicons-chevron-down"></span>
+                  </div>
+                  <ul>
+                    <li><a href="">My Profile</a></li>
+                    <li><a href="">Account Settings</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Log Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-descriptor small-12 columns">
+              <p>
+                <span>Active Studies</span>
+                <span>Testing Dates</span>
+              </p>
+            </div>
+            <div class="table-row small-12">
+              <table class="tabled scroll">
+                <thead class="light">
+                  <tr>
+                    <th>Project</th>
+                    <th>Begin</th>
+                    <th>End</th>
+                    <th>Qualified</th>
+                    <th>Scheduled</th>
+                    <th>Completed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
+                      <a href="" class="button small blue-2 show-for-medium">Select</a>
+                      <strong>123456C Shiny Mane Shampoo</strong>
+                    </td>
+                    <td>00/00/2016</td>
+                    <td>00/00/2016</td>
+                    <td>174 / 897 <div class="progress-bar"><div class="count red" style="width: 19%"></div></div></td>
+                    <td>120 / 120 <div class="progress-bar"><div class="count red" style="width: 100%"></div></div></td>
+                    <td>92 / 100 <div class="progress-bar"><div class="count blue" style="width: 92%"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
+                      <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456D Fancy Pants Dog Food</strong></td>
+                    <td>00/00/2016</td>
+                    <td>00/00/2016</td>
+                    <td>68 / 943 <div class="progress-bar"><div class="count blue" style="width: 19%"></div></div><span class="glyphicons glyphicons-warning-sign"></span></td>
+                    <td>44 / 100 <div class="progress-bar"><div class="count blue" style="width: 100%"></div></div></td>
+                    <td>0 / 75<div class="progress-bar"><div class="count red" style="width: 92%"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
+                      <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456E Penguin Ice Cream</strong></td>
+                    <td>00/00/2016</td>
+                    <td>00/00/2016</td>
+                    <td>204 / 623 <div class="progress-bar"><div class="count blue" style="width: 33%"></div></div></td>
+                    <td>44 / 100 <div class="progress-bar"><div class="count blue" style="width: 44%"></div></div><span class="glyphicons glyphicons-warning-sign"></span></td>
+                    <td>0 / 125<div class="progress-bar"><div class="count red" style="width: 100%"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
+                      <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456F Sparkling Cider FGs</strong></td>
+                    <td>00/00/2016</td>
+                    <td>00/00/2016</td>
+                    <td>48 / 892 <div class="progress-bar"><div class="count blue" style="width: 5.38%"></div></div></td>
+                    <td>12 / 36 <div class="progress-bar"><div class="count blue" style="width: 33%"></div></div><span class="glyphicons glyphicons-warning-sign"></span></td>
+                    <td>0 / 30 Dev <div class="progress-bar"><div class="count red" style="width: 0%"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
+                      <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456G Strawberry Icy Pop</strong></td>
+                    <td>00/00/2016</td>
+                    <td>00/00/2016</td>
+                    <td></td>
+                    <td>40 / 120 <div class="progress-bar"><div class="count blue" style="width: 33%"></div></div><span class="glyphicons glyphicons-warning-sign"></span></td>
+                    <td>0 / 30 Test <div class="progress-bar"><div class="count red" style="width: 0%"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
+                      <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456H GNT Bicycles Online</strong></td>
+                    <td>00/00/2016</td>
+                    <td>00/00/2016</td>
+                    <td></td>
+                    <td></td>
+                    <td>0 / 300 Dev <div class="progress-bar"><div class="count red" style="width: 0%"></div></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-descriptor small-12 columns">
+              <p>
+                <span>General Screeners</span>
+                <span>Active Dates</span>
+              </p>
+            </div>
+            <div class="table-row">
+              <table class="tabled scroll">
+                <thead class="light">
+                  <tr>
+                    <th>Project</th>
+                    <th>Begin</th>
+                    <th>End</th>
+                    <th>Qualified</th>
+                    <th>Scheduled</th>
+                    <th>Completed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
+                      <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456C Icy Pops General Screener</strong>
+                    </td>
+                    <td>00/00/2016</td>
+                    <td>00/00/2016</td>
+                    <td>332 / 1603 <div class="progress-bar"><div class="count blue" style="width: 21%"></div></div></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-descriptor small-12 columns">
+              <p>
+                <span>Completed Studies</span>
+                <span>Active Dates</span>
+              </p>
+            </div>
+            <div class="table-row small-12 columns">
+              <table class="tabled scroll">
+                <thead class="light">
+                  <tr>
+                    <th>Project</th>
+                    <th>Begin</th>
+                    <th>End</th>
+                    <th>Qualified</th>
+                    <th>Scheduled</th>
+                    <th>Completed</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div><!-- ./main-content -->
+        </div>
       </div>
     </div>
-    <aside class="vertical-menu left">
-      <ul class="nav">
-        <li>
-          <a href=""><span class="glyphicons glyphicons-dashboard"></span> Research Dashboard</a>
-        </li>
-        <li class="parent active">
-          <a href=""><span class="glyphicons glyphicons-group"></span> Assessors</a>
-          <ul class="visible">
-            <li><a href="">Reports &amp; Statistics</a></li>
-            <li><a href="">Assessor Lookup</a></li>
-            <li><a href="">Deduplicate</a></li>
-            <li><a href="">Process New Reg &amp; Referrals</a></li>
-            <li><a href="">Points Processing</a></li>
-            <li><a href="">Bad Email/Disengaged</a></li>
-            <li><a href="">Trained Panels</a></li>
-            <li><a href="">Fundraising</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href=""><span class="glyphicons glyphicons-folder-open"></span> Archives</a>
-        </li>
-        <li class="parent">
-          <a href=""><span class="glyphicons glyphicons-settings"></span> Settings</a>
-        </li>
-        <li>
-          <a href=""><span class="glyphicons glyphicons-chat"></span> Messages</a>
-        </li>
-        <li>
-          <a href=""><span class="glyphicons glyphicons-question-sign"></span> Help</a>
-        </li>
-      </ul>
-    </aside>
-    <div class="main-content">
-      <div class="filter-bar top-bar">
-        <div class="top-bar-left">
-          <ul class="dropdown menu action" data-dropdown-menu>
-            <li>
-              <a href="#dropdown-1">
-                <span class="glyphicons glyphicons-plus"></span>New Study <span class="glyphicons glyphicons-chevron-down"></span>
-              </a>
-              <ul class="menu" id="dropdown-1">
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#dropdown-2">
-                <span class="glyphicons glyphicons-filter"></span>Filter <span class="glyphicons glyphicons-chevron-down"></span>
-              </a>
-              <ul class="menu" id="dropdown-2">
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu status show-for-medium">
-            <li>In Development<span class="glyphicons glyphicons-cogwheel"></span></li>
-            <li>Open<span class="glyphicons glyphicons-play"></span></li>
-            <li>Closed<span class="glyphicons glyphicons-stop"></span></li>
-          </ul>
 
-          <div class="avatar-dropdown">
-            <div class="toggle right">
-              <div class="avatar small"></div>
-              <span class="glyphicons glyphicons-chevron-down"></span>
-            </div>
-            <ul>
-              <li><a href="">My Profile</a></li>
-              <li><a href="">Account Settings</a></li>
-              <li><a href="">Support</a></li>
-              <li><a href="">Log Out</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div class="table-descriptor small-12 columns">
-        <p>
-          <span>Active Studies</span>
-          <span>Testing Dates</span>
-        </p>
-      </div>
-      <div class="table-row small-12">
-        <table class="tabled scroll">
-          <thead class="light">
-            <tr>
-              <th>Project</th>
-              <th>Begin</th>
-              <th>End</th>
-              <th>Qualified</th>
-              <th>Scheduled</th>
-              <th>Completed</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
-                <a href="" class="button small blue-2 show-for-medium">Select</a>
-                <strong>123456C Shiny Mane Shampoo</strong>
-              </td>
-              <td>00/00/2016</td>
-              <td>00/00/2016</td>
-              <td>174 / 897 <div class="progress-bar"><div class="count red" style="width: 19%"></div></div></td>
-              <td>120 / 120 <div class="progress-bar"><div class="count red" style="width: 100%"></div></div></td>
-              <td>92 / 100 <div class="progress-bar"><div class="count blue" style="width: 92%"></div></div></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
-                <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456D Fancy Pants Dog Food</strong></td>
-              <td>00/00/2016</td>
-              <td>00/00/2016</td>
-              <td>68 / 943 <div class="progress-bar"><div class="count blue" style="width: 19%"></div></div><span class="glyphicons glyphicons-warning-sign"></span></td>
-              <td>44 / 100 <div class="progress-bar"><div class="count blue" style="width: 100%"></div></div></td>
-              <td>0 / 75<div class="progress-bar"><div class="count red" style="width: 92%"></div></div></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
-                <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456E Penguin Ice Cream</strong></td>
-              <td>00/00/2016</td>
-              <td>00/00/2016</td>
-              <td>204 / 623 <div class="progress-bar"><div class="count blue" style="width: 33%"></div></div></td>
-              <td>44 / 100 <div class="progress-bar"><div class="count blue" style="width: 44%"></div></div><span class="glyphicons glyphicons-warning-sign"></span></td>
-              <td>0 / 125<div class="progress-bar"><div class="count red" style="width: 100%"></div></div></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
-                <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456F Sparkling Cider FGs</strong></td>
-              <td>00/00/2016</td>
-              <td>00/00/2016</td>
-              <td>48 / 892 <div class="progress-bar"><div class="count blue" style="width: 5.38%"></div></div></td>
-              <td>12 / 36 <div class="progress-bar"><div class="count blue" style="width: 33%"></div></div><span class="glyphicons glyphicons-warning-sign"></span></td>
-              <td>0 / 30 Dev <div class="progress-bar"><div class="count red" style="width: 0%"></div></div></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
-                <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456G Strawberry Icy Pop</strong></td>
-              <td>00/00/2016</td>
-              <td>00/00/2016</td>
-              <td></td>
-              <td>40 / 120 <div class="progress-bar"><div class="count blue" style="width: 33%"></div></div><span class="glyphicons glyphicons-warning-sign"></span></td>
-              <td>0 / 30 Test <div class="progress-bar"><div class="count red" style="width: 0%"></div></div></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
-                <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456H GNT Bicycles Online</strong></td>
-              <td>00/00/2016</td>
-              <td>00/00/2016</td>
-              <td></td>
-              <td></td>
-              <td>0 / 300 Dev <div class="progress-bar"><div class="count red" style="width: 0%"></div></div></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
 
-      <div class="table-descriptor small-12 columns">
-        <p>
-          <span>General Screeners</span>
-          <span>Active Dates</span>
-        </p>
-      </div>
-      <div class="table-row">
-        <table class="tabled scroll">
-          <thead class="light">
-            <tr>
-              <th>Project</th>
-              <th>Begin</th>
-              <th>End</th>
-              <th>Qualified</th>
-              <th>Scheduled</th>
-              <th>Completed</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a href="" class="button glyph small blue-2 hide-for-medium"><span class="glyphicons glyphicons-hand-up"></span></a>
-                <a href="" class="button small blue-2 show-for-medium">Select</a> <strong>123456C Icy Pops General Screener</strong>
-              </td>
-              <td>00/00/2016</td>
-              <td>00/00/2016</td>
-              <td>332 / 1603 <div class="progress-bar"><div class="count blue" style="width: 21%"></div></div></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
 
-      <div class="table-descriptor small-12 columns">
-        <p>
-          <span>Completed Studies</span>
-          <span>Active Dates</span>
-        </p>
-      </div>
-      <div class="table-row small-12 columns">
-        <table class="tabled scroll">
-          <thead class="light">
-            <tr>
-              <th>Project</th>
-              <th>Begin</th>
-              <th>End</th>
-              <th>Qualified</th>
-              <th>Scheduled</th>
-              <th>Completed</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </div><!-- ./main-content -->
 
 
     <!-- GLOBAL JAVASCRIPT !-->
