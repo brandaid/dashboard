@@ -4139,7 +4139,7 @@ table.tabled {
     color: #32383c;
     display: block;
     font-weight: 600;
-    padding: 0.5rem 1.5rem; }
+    padding: 0.5rem; }
     .vertical-menu .nav li a:hover {
       text-decoration: none; }
   .vertical-menu .nav li.parent > a::after {
