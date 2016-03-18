@@ -1,8 +1,6 @@
 .top-bar {
   background: $blue-1;
 
-
-
   @include mq(s) {
     padding: 1rem;
   }
@@ -17,7 +15,7 @@
 
   // logo
   img {
-    @include mq(m) {
+    @include mq(mo) {
       max-width: 65.3906px;
     }
   }

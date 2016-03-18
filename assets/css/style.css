@@ -4265,8 +4265,8 @@ aside.left .nav {
       width: 30%;
       margin-right: 0; } }
   .top-bar .top-bar-title img {
-    /* Medium and up */ }
-    @media screen and (min-width: 40em) {
+    /* Medium only */ }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       .top-bar .top-bar-title img {
         max-width: 65.3906px; } }
 
