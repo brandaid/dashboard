@@ -4264,6 +4264,11 @@ aside.left .nav {
       float: left;
       width: 30%;
       margin-right: 0; } }
+  .top-bar .top-bar-title img {
+    /* Medium and up */ }
+    @media screen and (min-width: 40em) {
+      .top-bar .top-bar-title img {
+        max-width: 65.3906px; } }
 
 .top-bar .top-bar-right {
   /* Small only */ }
@@ -4312,9 +4317,13 @@ aside.left .nav {
 
 .top-bar .menu-icon {
   color: #ffffff;
-  margin-top: 0.3rem; }
+  margin-top: 0.3rem;
+  /* Medium and up */ }
   .top-bar .menu-icon:hover {
     color: #ffffff; }
+  @media screen and (min-width: 40em) {
+    .top-bar .menu-icon {
+      margin-top: 1rem; } }
 
 .off-canvas .top-bar {
   background: #01addf;
@@ -4324,7 +4333,17 @@ aside.left .nav {
     color: #ffffff;
     font-size: 3rem;
     top: 0.65rem;
-    line-height: 0; }
+    line-height: 0;
+    /* Medium and up */ }
+    @media screen and (min-width: 40em) {
+      .off-canvas .top-bar .close-button {
+        top: 2.1rem; } }
+
+.off-canvas-content .top-bar {
+  /* Medium and up */ }
+  @media screen and (min-width: 40em) {
+    .off-canvas-content .top-bar {
+      padding: 0.70rem; } }
 
 .filter-bar {
   background: none;
@@ -4451,10 +4470,15 @@ aside.left {
   height: 100%;
   width: 80%;
   /* Medium and up */
+  /* Large and up */
   /* Small only */ }
   @media screen and (min-width: 40em) {
     .main-content {
-      overflow-y: scroll; } }
+      overflow-y: scroll;
+      width: 100%; } }
+  @media screen and (min-width: 64em) {
+    .main-content {
+      width: 80%; } }
   @media screen and (max-width: 39.9375em) {
     .main-content {
       width: 100%; } }

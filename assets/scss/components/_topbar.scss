@@ -1,6 +1,8 @@
 .top-bar {
   background: $blue-1;
 
+
+
   @include mq(s) {
     padding: 1rem;
   }
@@ -11,6 +13,13 @@
     float: left;
     width: 30%;
     margin-right: 0;
+  }
+
+  // logo
+  img {
+    @include mq(m) {
+      max-width: 65.3906px;
+    }
   }
 }
 
@@ -71,6 +80,10 @@
   &:hover {
     color: $white;
   }
+
+  @include mq(m) {
+    margin-top: 1rem;
+  }
 }
 
 // Off canvas top bar
@@ -84,5 +97,15 @@
     font-size: 3rem;
     top: 0.65rem;
     line-height: 0;
+
+    @include mq(m) {
+      top: 2.1rem;
+    }
+  }
+}
+
+.off-canvas-content .top-bar {
+  @include mq(m) {
+    padding: 0.70rem;
   }
 }

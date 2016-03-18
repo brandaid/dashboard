@@ -40,6 +40,11 @@ aside.left {
 
   @include mq(m) {
     overflow-y: scroll;
+    width: 100%;
+  }
+
+  @include mq(l) {
+    width: 80%;
   }
 
   @include mq(s) {
