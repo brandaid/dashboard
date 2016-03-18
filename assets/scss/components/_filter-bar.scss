@@ -51,6 +51,32 @@
 
   > ul li {
     float: none;
+    border-bottom: 1px solid $gray-4;
+
+    &:first-child a {
+      background: $blue-2;
+      &:hover { color: $white; }
+    }
+
+    &:last-child a {
+      background: $white;
+      border-radius: 0 0 rem(3) rem(3);
+      border-bottom: none;
+    }
+
+    &:first-child a::before {
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid $blue-2;
+    }
+
+    a {
+      background: $gray-5;
+    }
+
+    a:hover {
+      color: $gray-3;
+    }
   }
 
   @include mq(s) {

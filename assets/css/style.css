@@ -4386,7 +4386,24 @@ aside.left .nav {
   margin-top: 0.3rem;
   /* Small only */ }
   .filter-bar .avatar-dropdown > ul li {
-    float: none; }
+    float: none;
+    border-bottom: 1px solid #eaedee; }
+    .filter-bar .avatar-dropdown > ul li:first-child a {
+      background: #01addf; }
+      .filter-bar .avatar-dropdown > ul li:first-child a:hover {
+        color: #ffffff; }
+    .filter-bar .avatar-dropdown > ul li:last-child a {
+      background: #ffffff;
+      border-radius: 0 0 0.1875rem 0.1875rem;
+      border-bottom: none; }
+    .filter-bar .avatar-dropdown > ul li:first-child a::before {
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid #01addf; }
+    .filter-bar .avatar-dropdown > ul li a {
+      background: #f3f3f3; }
+    .filter-bar .avatar-dropdown > ul li a:hover {
+      color: #8b95a7; }
   @media screen and (max-width: 39.9375em) {
     .filter-bar .avatar-dropdown {
       margin-left: 0; } }
