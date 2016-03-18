@@ -4459,4 +4459,8 @@ aside.left {
     .main-content {
       width: 100%; } }
 
+.off-canvas.position-left,
+.off-canvas-wrap {
+  height: 100%; }
+
 /*# sourceMappingURL=style.css.map */
