@@ -4452,6 +4452,16 @@ aside.left .nav {
   .progress-bar .count.blue {
     background: #01addf; }
 
+.tooltip {
+  background: #006886;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 0.1875rem rgba(50, 56, 60, 0.5);
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  padding: 1rem; }
+  .tooltip::before {
+    display: none; }
+
 .dashboard-panel {
   margin-bottom: 2rem; }
 
