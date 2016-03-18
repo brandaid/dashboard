@@ -9,6 +9,11 @@ aside.left {
   width: 20%;
   position: relative;
 
+  @include mq(l) {
+    position: absolute;
+    left: 0;
+  }
+
   @include mq(s) {
     position: absolute;
     left: -500px;
@@ -34,16 +39,16 @@ aside.left {
 }
 
 .main-content {
-  float: left;
   height: 100%;
+  position: relative;
   width: 80%;
 
   @include mq(m) {
-    overflow-y: scroll;
     width: 100%;
   }
 
   @include mq(l) {
+    float: right;
     width: 80%;
   }
 
@@ -54,3 +59,8 @@ aside.left {
 
 .off-canvas.position-left,
 .off-canvas-wrap { height:100%; }
+
+.off-canvas-content {
+  overflow: hidden;
+  position: relative;
+}

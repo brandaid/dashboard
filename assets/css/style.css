@@ -4461,7 +4461,12 @@ aside.left {
   height: 100%;
   width: 20%;
   position: relative;
+  /* Large and up */
   /* Small only */ }
+  @media screen and (min-width: 64em) {
+    aside.left {
+      position: absolute;
+      left: 0; } }
   @media screen and (max-width: 39.9375em) {
     aside.left {
       position: absolute;
@@ -4486,18 +4491,18 @@ aside.left {
         display: none; } }
 
 .main-content {
-  float: left;
   height: 100%;
+  position: relative;
   width: 80%;
   /* Medium and up */
   /* Large and up */
   /* Small only */ }
   @media screen and (min-width: 40em) {
     .main-content {
-      overflow-y: scroll;
       width: 100%; } }
   @media screen and (min-width: 64em) {
     .main-content {
+      float: right;
       width: 80%; } }
   @media screen and (max-width: 39.9375em) {
     .main-content {
@@ -4506,5 +4511,9 @@ aside.left {
 .off-canvas.position-left,
 .off-canvas-wrap {
   height: 100%; }
+
+.off-canvas-content {
+  overflow: hidden;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
