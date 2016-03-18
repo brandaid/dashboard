@@ -14,9 +14,14 @@
     padding-top: 0.75rem;
     width: 70%;
   }
+
+  .dropdown.menu a {
+    padding-left: 0;
+  }
 }
 
 .filter-bar .top-bar-right {
+  text-align: right;
   @include mq(s) {
     width: 30%;
   }

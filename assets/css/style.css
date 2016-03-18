@@ -4360,8 +4360,11 @@ aside.left .nav {
     .filter-bar .top-bar-left {
       padding-top: 0.75rem;
       width: 70%; } }
+  .filter-bar .top-bar-left .dropdown.menu a {
+    padding-left: 0; }
 
 .filter-bar .top-bar-right {
+  text-align: right;
   /* Small only */ }
   @media screen and (max-width: 39.9375em) {
     .filter-bar .top-bar-right {
@@ -4470,7 +4473,7 @@ aside.left {
     background-image: -webkit-linear-gradient(left, rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.1));
     background-image: linear-gradient(to right,rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.1));
     content: '';
-    display: table;
+    display: block;
     width: 0.3125rem;
     height: 100%;
     position: absolute;
