@@ -6,6 +6,7 @@
   li {
     padding: 0.5rem;
     @include transition(0.3s all);
+    border-bottom: rem(1) solid $gray-4;
 
     a {
       font-weight: 600;
@@ -23,5 +24,9 @@
   li:first-child,
   li:last-child {
     border-radius: rem(3) rem(3) 0 0;
+  }
+
+  li:last-child {
+    border-bottom: none;
   }
 }

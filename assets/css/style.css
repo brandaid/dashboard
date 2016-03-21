@@ -4472,7 +4472,8 @@ aside.left .nav {
     padding: 0.5rem;
     -webkit-transition: 0.3s all;
     -moz-transition: 0.3s all;
-    transition: 0.3s all; }
+    transition: 0.3s all;
+    border-bottom: 0.0625rem solid #eaedee; }
     .filter-bar ul.is-dropdown-submenu li a {
       font-weight: 600; }
     .filter-bar ul.is-dropdown-submenu li:hover {
@@ -4486,6 +4487,8 @@ aside.left .nav {
   .filter-bar ul.is-dropdown-submenu li:first-child,
   .filter-bar ul.is-dropdown-submenu li:last-child {
     border-radius: 0.1875rem 0.1875rem 0 0; }
+  .filter-bar ul.is-dropdown-submenu li:last-child {
+    border-bottom: none; }
 
 .dashboard-panel {
   margin-bottom: 2rem; }
