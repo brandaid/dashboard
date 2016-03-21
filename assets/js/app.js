@@ -7,7 +7,7 @@
       },
 
       toggleSubNav: function() {
-        $('.vertical-menu .menu li.parent > a').click(function(e) {
+        $('.vertical-menu li.parent > a').click(function(e) {
           e.preventDefault();
           $(this)
             .parent('li')
@@ -30,7 +30,7 @@
         vm.toggleSubNav();
         vm.toggleAvatarDropdown();
         vm.initDatepicker();
-        vm.toggleSubNav();
+        //vm.toggleSubNav();
       }
     };
 
