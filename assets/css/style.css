@@ -4197,6 +4197,9 @@ aside.left .nav {
     aside.left .nav {
       background: #ffffff; } }
 
+.off-canvas {
+  background: #f3f3f3; }
+
 .notifications {
   list-style-type: none;
   margin: 0;
@@ -4472,12 +4475,8 @@ aside.left .nav {
     padding: 0.5rem;
     -webkit-transition: 0.3s all;
     -moz-transition: 0.3s all;
-<<<<<<< 6abc848f61be07e72c615214cb62f4faddde4fe3
     transition: 0.3s all;
     border-bottom: 0.0625rem solid #eaedee; }
-=======
-    transition: 0.3s all; }
->>>>>>> Merge master
     .filter-bar ul.is-dropdown-submenu li a {
       font-weight: 600; }
     .filter-bar ul.is-dropdown-submenu li:hover {
@@ -4491,11 +4490,8 @@ aside.left .nav {
   .filter-bar ul.is-dropdown-submenu li:first-child,
   .filter-bar ul.is-dropdown-submenu li:last-child {
     border-radius: 0.1875rem 0.1875rem 0 0; }
-<<<<<<< 6abc848f61be07e72c615214cb62f4faddde4fe3
   .filter-bar ul.is-dropdown-submenu li:last-child {
     border-bottom: none; }
-=======
->>>>>>> Merge master
 
 .dashboard-panel {
   margin-bottom: 2rem; }
