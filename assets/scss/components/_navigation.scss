@@ -4,6 +4,8 @@
 }
 
 .vertical-menu {
+  background: $gray-5;
+
   @include mq(m) {
     min-height: rem(800);
   }
@@ -64,7 +66,7 @@
   .nav li.active,
   .nav li.parent.active {
     border-left: rem(3) solid $blue-2;
-    background: $gray-5;
+    background: $white;
   }
 
   .nav li.parent ul {

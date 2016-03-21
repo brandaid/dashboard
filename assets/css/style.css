@@ -4111,6 +4111,7 @@ div.table-wrapper {
   margin-bottom: 2rem; }
 
 .vertical-menu {
+  background: #f3f3f3;
   /* Medium and up */ }
   @media screen and (min-width: 40em) {
     .vertical-menu {
@@ -4161,7 +4162,7 @@ div.table-wrapper {
   .vertical-menu .nav li.active,
   .vertical-menu .nav li.parent.active {
     border-left: 0.1875rem solid #01addf;
-    background: #f3f3f3; }
+    background: #ffffff; }
   .vertical-menu .nav li.parent ul {
     display: none;
     list-style-type: none;
