@@ -1,0 +1,27 @@
+.filter-bar ul.is-dropdown-submenu {
+  background: $gray-5;
+  border: none;
+  border-radius: rem(3);
+
+  li {
+    padding: 0.5rem;
+    @include transition(0.3s all);
+
+    a {
+      font-weight: 600;
+    }
+
+    &:hover {
+      background: $blue-2;
+      color: $white !important;
+      @include transition(0.3s all);
+
+      a { color: $white; }
+    }
+  }
+
+  li:first-child,
+  li:last-child {
+    border-radius: rem(3) rem(3) 0 0;
+  }
+}
