@@ -91,13 +91,13 @@ table.tabled {
 
   span {
     display: inline-block;
-    font-size: rem(14);
+    font-size: rem(18);
     font-weight: bold;
     text-transform: uppercase;
     width: 17%;
 
     @include mq(s) {
-      font-size: rem(12);
+      font-size: rem(14);
       width: 35%;
       margin-left: 0.5rem;
     }
