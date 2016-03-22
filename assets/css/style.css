@@ -4014,12 +4014,10 @@ table.tabled {
   table.tabled thead,
   table.tabled tr {
     border: none;
-    background: none;
-    border-radius: 1rem; }
+    background: none; }
   table.tabled thead {
     background: #a5aebe;
     border: 0.0625rem solid #a5aebe;
-    border-radius: 1rem;
     color: #ffffff; }
     table.tabled thead.light {
       background: #f3f3f3;
@@ -4098,10 +4096,6 @@ table.tabled {
 .pinned {
   border-left: none;
   border-right: none; }
-
-.scrollable table td {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
 
 div.table-wrapper {
   border-right: 1px solid #f3f3f3; }

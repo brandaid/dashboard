@@ -10,13 +10,11 @@ table.tabled {
   tr {
     border: none;
     background: none;
-    border-radius: 1rem;
   }
 
   thead {
     background: $gray-1;
     border: rem(1) solid $gray-1;
-    border-radius: 1rem;
     color: $white;
 
     &.light {
@@ -133,10 +131,10 @@ table.tabled {
     border-right: none;
 }
 
-.scrollable table td {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+// .scrollable table td {
+//   padding-top: 2rem;
+//   padding-bottom: 2rem;
+// }
 
 div.table-wrapper {
   border-right: 1px solid $gray-5;

@@ -26,39 +26,10 @@
         $('input.datepicker').pickadate();
       },
 
-      setCellHeights: function (original, copy) {
-
-        var tr = original.find('tr'),
-            tr_copy = copy.find('tr'),
-            td = copy.find('td'),
-            heights = [];
-
-        tr.each(function (index) {
-          var self = $(this),
-              tx = self.find('td'); //omit TH in my case, you can put it back.
-          tx.each(function (index2) { // Access to this index
-              var height = $(this).outerHeight(true);
-              heights[index] = heights[index] || 0;
-              if (height > heights[index])
-                  heights[index] = height;
-
-              if (index2 > 0 && $(this).height() < height) // New line
-                  $(this).attr("style","height:"+heights[1]+"px");
-          });
-
-        });
-
-        tr_copy.each(function (index) {
-          $(this).height(heights[index]);
-        });
-      },
-
       init: function() {
         vm.toggleSubNav();
         vm.toggleAvatarDropdown();
         vm.initDatepicker();
-        //vm.toggleSubNav();
-        vm.setCellHeights($('.tabled'), $('.tabled'));
       }
     };
 
