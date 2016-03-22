@@ -4197,6 +4197,9 @@ aside.left .nav {
     aside.left .nav {
       background: #ffffff; } }
 
+.off-canvas {
+  background: #f3f3f3; }
+
 .notifications {
   list-style-type: none;
   margin: 0;
