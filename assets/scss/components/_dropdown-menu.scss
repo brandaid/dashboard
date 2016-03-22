@@ -40,14 +40,14 @@
     position: absolute;
     top: 1.6rem;
     left: 2.8rem;
-    @include transition(0s border-bottom);
+    @include transition(0.3s border-bottom);
   }
 
   li:first-child:hover::before {
     border-left: rem(8) solid transparent;
     border-right: rem(8) solid transparent;
     border-bottom: rem(8) solid $blue-2;
-    @include transition(0s border-bottom);
+    @include transition(0.3s border-bottom);
   }
 
   li:last-child {

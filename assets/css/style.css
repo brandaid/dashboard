@@ -4502,16 +4502,16 @@ aside.left .nav {
     position: absolute;
     top: 1.6rem;
     left: 2.8rem;
-    -webkit-transition: 0s border-bottom;
-    -moz-transition: 0s border-bottom;
-    transition: 0s border-bottom; }
+    -webkit-transition: 0.3s border-bottom;
+    -moz-transition: 0.3s border-bottom;
+    transition: 0.3s border-bottom; }
   .filter-bar ul.is-dropdown-submenu li:first-child:hover::before {
     border-left: 0.5rem solid transparent;
     border-right: 0.5rem solid transparent;
     border-bottom: 0.5rem solid #01addf;
-    -webkit-transition: 0s border-bottom;
-    -moz-transition: 0s border-bottom;
-    transition: 0s border-bottom; }
+    -webkit-transition: 0.3s border-bottom;
+    -moz-transition: 0.3s border-bottom;
+    transition: 0.3s border-bottom; }
   .filter-bar ul.is-dropdown-submenu li:last-child {
     border-bottom: none; }
 
