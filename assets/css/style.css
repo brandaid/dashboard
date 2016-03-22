@@ -4197,6 +4197,9 @@ aside.left .nav {
     aside.left .nav {
       background: #ffffff; } }
 
+.off-canvas {
+  background: #f3f3f3; }
+
 .notifications {
   list-style-type: none;
   margin: 0;
@@ -4484,9 +4487,31 @@ aside.left .nav {
       transition: 0.3s all; }
       .filter-bar ul.is-dropdown-submenu li:hover a {
         color: #ffffff; }
-  .filter-bar ul.is-dropdown-submenu li:first-child,
-  .filter-bar ul.is-dropdown-submenu li:last-child {
+  .filter-bar ul.is-dropdown-submenu li:first-child {
     border-radius: 0.1875rem 0.1875rem 0 0; }
+  .filter-bar ul.is-dropdown-submenu li:last-child {
+    border-radius: 0 0 0.1875rem 0.1875rem; }
+  .filter-bar ul.is-dropdown-submenu li:first-child::before {
+    content: '';
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid #f3f3f3;
+    height: 0;
+    margin-top: -2rem;
+    width: 0;
+    position: absolute;
+    top: 1.6rem;
+    left: 2.8rem;
+    -webkit-transition: 0s border-bottom;
+    -moz-transition: 0s border-bottom;
+    transition: 0s border-bottom; }
+  .filter-bar ul.is-dropdown-submenu li:first-child:hover::before {
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid #01addf;
+    -webkit-transition: 0s border-bottom;
+    -moz-transition: 0s border-bottom;
+    transition: 0s border-bottom; }
   .filter-bar ul.is-dropdown-submenu li:last-child {
     border-bottom: none; }
 
