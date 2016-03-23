@@ -4565,6 +4565,9 @@ aside.left {
     .main-content {
       width: 100%; } }
 
+.off-canvas-content,
+.off-canvas-wrapper,
+.off-canvas-wrapper-inner,
 .off-canvas.position-left,
 .off-canvas-wrap {
   height: 100%; }
