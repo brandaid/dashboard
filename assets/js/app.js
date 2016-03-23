@@ -7,7 +7,7 @@
       },
 
       toggleSubNav: function() {
-        $('.vertical-menu li.parent > a').click(function(e) {
+        $('aside .vertical-menu li.parent > a').click(function(e) {
           e.preventDefault();
           $(this)
             .parent('li')
