@@ -4026,7 +4026,13 @@ table.tabled {
     table.tabled thead th {
       font-size: 0.875rem;
       padding: 1rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      width: 14.4%; }
+      table.tabled thead th:first-child {
+        /* Large and up */ }
+        @media screen and (min-width: 64em) {
+          table.tabled thead th:first-child {
+            width: 28%; } }
     table.tabled thead .custom-checkbox {
       border: 0.0625rem solid #ffffff; }
       table.tabled thead .custom-checkbox::before, table.tabled thead .custom-checkbox::after {
@@ -4052,7 +4058,13 @@ table.tabled {
         background: #01addf; }
   table.tabled tbody td {
     padding: 1rem;
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: 14.4%; }
+    table.tabled tbody td:first-child {
+      /* Large and up */ }
+      @media screen and (min-width: 64em) {
+        table.tabled tbody td:first-child {
+          width: 28%; } }
   table.tabled td.quarter {
     width: 25%; }
   table.tabled td.half {

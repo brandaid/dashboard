@@ -27,6 +27,13 @@ table.tabled {
       font-size: rem(14);
       padding: 1rem;
       text-transform: uppercase;
+      width: 14.4%;
+
+      &:first-child {
+        @include mq(l) {
+          width: 28%;
+        }
+      }
     }
 
     .custom-checkbox {
@@ -69,6 +76,13 @@ table.tabled {
   tbody td {
     padding: 1rem;
     vertical-align: middle;
+    width: 14.4%;
+
+    &:first-child {
+      @include mq(l) {
+        width: 28%;
+      }
+    }
   }
 
   td.quarter {
