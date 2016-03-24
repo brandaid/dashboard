@@ -124,6 +124,7 @@ aside.left .nav {
   }
 }
 
-.off-canvas {
-  background: $gray-5;  
+.off-canvas,
+.off-canvas-wrapper {
+  background: $gray-5;
 }

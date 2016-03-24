@@ -4201,7 +4201,8 @@ aside.left .nav {
     aside.left .nav {
       background: #ffffff; } }
 
-.off-canvas {
+.off-canvas,
+.off-canvas-wrapper {
   background: #f3f3f3; }
 
 .notifications {
