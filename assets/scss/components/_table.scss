@@ -25,14 +25,18 @@ table.tabled {
 
     th {
       font-size: rem(14);
-      padding: 1rem;
+      padding: 1rem 0.5rem;
       text-transform: uppercase;
-      width: 14.4%;
 
-      &:first-child {
-        @include mq(l) {
-          width: 28%;
-        }
+      &:nth-child(2),
+      &:nth-child(3) {
+        text-align: left;
+      }
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        text-align: right;
       }
     }
 
@@ -74,14 +78,20 @@ table.tabled {
   }
 
   tbody td {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     vertical-align: middle;
-    width: 14.4%;
 
-    &:first-child {
-      @include mq(l) {
-        width: 28%;
-      }
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 5%;
+      text-align: left;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      text-align: right;
+      width: 18%;
     }
   }
 
@@ -133,12 +143,11 @@ table.tabled {
   margin: 0 0.2rem 0 0;
 }
 
-.table-row .tabled .glyphicons-warning-sign {
+// Warning sign
+.tabled .glyphicons-warning-sign {
   color: $yellow;
 }
 
-.table-row .tabled tr td:first-child {
-}
 
 .pinned {
     border-left: none;

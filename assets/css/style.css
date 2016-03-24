@@ -4025,14 +4025,12 @@ table.tabled {
       color: #a5aebe; }
     table.tabled thead th {
       font-size: 0.875rem;
-      padding: 1rem;
-      text-transform: uppercase;
-      width: 14.4%; }
-      table.tabled thead th:first-child {
-        /* Large and up */ }
-        @media screen and (min-width: 64em) {
-          table.tabled thead th:first-child {
-            width: 28%; } }
+      padding: 1rem 0.5rem;
+      text-transform: uppercase; }
+      table.tabled thead th:nth-child(2), table.tabled thead th:nth-child(3) {
+        text-align: left; }
+      table.tabled thead th:nth-child(4), table.tabled thead th:nth-child(5), table.tabled thead th:nth-child(6) {
+        text-align: right; }
     table.tabled thead .custom-checkbox {
       border: 0.0625rem solid #ffffff; }
       table.tabled thead .custom-checkbox::before, table.tabled thead .custom-checkbox::after {
@@ -4057,14 +4055,14 @@ table.tabled {
       table.tabled tbody tr:hover .custom-checkbox::before, table.tabled tbody tr:hover .custom-checkbox::after {
         background: #01addf; }
   table.tabled tbody td {
-    padding: 1rem;
-    vertical-align: middle;
-    width: 14.4%; }
-    table.tabled tbody td:first-child {
-      /* Large and up */ }
-      @media screen and (min-width: 64em) {
-        table.tabled tbody td:first-child {
-          width: 28%; } }
+    padding: 1rem 0.5rem;
+    vertical-align: middle; }
+    table.tabled tbody td:nth-child(2), table.tabled tbody td:nth-child(3) {
+      width: 5%;
+      text-align: left; }
+    table.tabled tbody td:nth-child(4), table.tabled tbody td:nth-child(5), table.tabled tbody td:nth-child(6) {
+      text-align: right;
+      width: 18%; }
   table.tabled td.quarter {
     width: 25%; }
   table.tabled td.half {
@@ -4102,7 +4100,7 @@ table.tabled {
 .table-row .button.small {
   margin: 0 0.2rem 0 0; }
 
-.table-row .tabled .glyphicons-warning-sign {
+.tabled .glyphicons-warning-sign {
   color: #fec534; }
 
 .pinned {
