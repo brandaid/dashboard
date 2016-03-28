@@ -156,4 +156,5 @@ table.tabled {
 
 div.table-wrapper {
   border-right: 1px solid $gray-5;
+  -webkit-overflow-scrolling: touch;
 }
