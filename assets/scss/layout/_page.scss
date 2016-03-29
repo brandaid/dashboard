@@ -63,6 +63,10 @@ aside.left {
 .off-canvas.position-left,
 .off-canvas-wrap { height:100%; }
 
+.off-canvas-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+
 .off-canvas-content {
   min-height: 100%;
   height: auto;

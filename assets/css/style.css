@@ -4108,8 +4108,7 @@ table.tabled {
   border-right: none; }
 
 div.table-wrapper {
-  border-right: 1px solid #f3f3f3;
-  -webkit-overflow-scrolling: touch; }
+  border-right: 1px solid #f3f3f3; }
 
 .dashboard-panel.vertical-menu {
   border: 0.0625rem solid #a5aebe;
@@ -4583,6 +4582,9 @@ aside.left {
 .off-canvas.position-left,
 .off-canvas-wrap {
   height: 100%; }
+
+.off-canvas-wrapper {
+  -webkit-overflow-scrolling: touch; }
 
 .off-canvas-content {
   min-height: 100%;
