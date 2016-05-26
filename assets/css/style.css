@@ -4163,10 +4163,14 @@ div.table-wrapper {
     color: #a5aebe;
     float: right;
     margin-top: 0.125rem; }
+  .vertical-menu .nav > li:hover,
   .vertical-menu .nav li.active,
   .vertical-menu .nav li.parent.active {
     border-left: 0.1875rem solid #01addf;
-    background: #ffffff; }
+    background: #ffffff;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    transition: 0.2s all; }
   .vertical-menu .nav li.parent ul {
     display: none;
     list-style-type: none;

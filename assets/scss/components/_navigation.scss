@@ -63,10 +63,12 @@
     }
   }
 
+  .nav > li:hover,
   .nav li.active,
   .nav li.parent.active {
     border-left: rem(3) solid $blue-2;
     background: $white;
+    @include transition(0.2s all);
   }
 
   .nav li.parent ul {
