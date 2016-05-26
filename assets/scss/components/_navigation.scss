@@ -77,6 +77,13 @@
     li a {
       color: $gray-3;
       padding: 0.5rem 2rem 0.5rem 2.8rem;
+      @include transition(0.5s all);
+
+      &:hover {
+        color: $blue-2;
+        font-weight: 700;
+        @include transition(0.5s all);
+      }
     }
 
     &.visible {
